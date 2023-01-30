@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
   const isNavShown = size.width > 640 ? true : navBarState;
 
   return (
+    <MeshProvider>
     <div>
       <div
         className={`h-screen layout max-w-7xl mx-auto relative`}
@@ -27,9 +28,9 @@ function MyApp({ Component, pageProps }) {
           <div
             className={`backdrop w-1/3 h-full absolute top-0 left-1/2 -translate-x-1/2`}
           ></div>
-    <MeshProvider>
+    
       <Component {...pageProps} />
-    </MeshProvider>
+  
     <div className="w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
             <SocialIcons />
             <div>
@@ -39,6 +40,7 @@ function MyApp({ Component, pageProps }) {
         </main>
       </div>
     </div>
+      </MeshProvider>
   );
 }
 

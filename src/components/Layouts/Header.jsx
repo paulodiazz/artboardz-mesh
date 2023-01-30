@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { CardanoWallet} from "@meshsdk/react";
 
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import UserBalance from "../User/UserBalance";
@@ -25,8 +26,8 @@ const Header = () => {
         </button>
         <Logo />
       </div>
-      <div className="flex items-center gap-2 ml-auto">
-        <UserBalance CreditBalance={"650 ADA"} />
+      <div className="z-40 text-[#FFFFFF] flex items-center gap-2 ml-auto">
+        <CardanoWallet/>
         <HeaderProfile />
       </div>
     </header>
