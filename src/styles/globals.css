@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    " main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  scrollbar-color: rgba(18, 61, 145, 1) transparent;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.main::-webkit-scrollbar {
+  width: 0;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgba(18, 61, 145, 1);
+  border-radius: 2px;
+}
+
+@media (min-width: 640px) {
+  .layout {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "navbar header"
+      "navbar main";
+  }
+
+  .backdrop {
+    background: radial-gradient(75.93% 75.93% at 13.92% 23.07%,
+        #0056ff 0%,
+        #ff3800 100%) !important;
+    filter: blur(250px);
+    z-index: -1;
+  }
+
+  .navbar {
+    grid-area: navbar;
+  }
+}
