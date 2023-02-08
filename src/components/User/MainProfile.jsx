@@ -3,6 +3,7 @@ import EditIcon from "@/assets/icons/EditIcon";
 import TwitterIconsOutline from "@/assets/icons/TwitterIconsOutline";
 import Avatar from "./Avatar";
 import ProfileEditForm from "./ProfileEditForm";
+import Link from "next/link";
 
 const MainProfile = ({ image, username, location }) => {
   const [editProfileIsShown, setEditProfileIsShown] = useState(false);
@@ -27,9 +28,9 @@ const MainProfile = ({ image, username, location }) => {
         <p className="text-base font-medium">{`${location.city}, ${location.country}`}</p>
       </div>
       <div>
-        <a href="/">
+        <Link href="/">
           <TwitterIconsOutline />
-        </a>
+        </Link>
       </div>
       {editProfileIsShown && (
         <ProfileEditForm onCloseForm={toggleProfileEditFormHandler} />

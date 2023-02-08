@@ -19,7 +19,7 @@ const MyProfileSection = () => {
       />
       <div className="p-4">
         <p className="font-Roboto text-lg font-semibold tracking-wide sm:ml-5">
-          Owned Artboardz ({DUMMY_RELEASES.length}){" "}
+          My Artboardz ({DUMMY_RELEASES.length}){" "}
         </p>
       </div>
       <div className="p-4">
