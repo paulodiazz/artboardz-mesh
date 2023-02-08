@@ -11,7 +11,7 @@ const DUMMY_INFO = [
   },
   {
     image: CBImg2,
-    description: "Personalized physical tag on the mural",
+    description: "Name engraved on physical plaque",
   },
   {
     image: CBImg3,
@@ -19,7 +19,7 @@ const DUMMY_INFO = [
   },
   {
     image: CBImg4,
-    description: "Tactfully promoting Cardan",
+    description: "Tactfully promoting the Cardano ecosystem",
   },
 ];
 
@@ -37,7 +37,7 @@ const BenefitsSections = () => {
               <Image
                 src={info.image}
                 alt="/"
-                className="w-full aspect-square object-cover"
+                className= 'm-auto w-15rem aspect-16/10 object-cover'
               />
               <p className="text-xl text-center md:text-xl">
                 {info.description}

@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <MeshProvider>
     <div>
       <div
-        className={`h-screen layout max-w-7xl mx-auto relative`}
+        className={`h-screen layout max-w-8xl mx-auto relative`}
       >
         <Header />
         {isNavShown && <Navbar />}

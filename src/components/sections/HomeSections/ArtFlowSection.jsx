@@ -12,24 +12,12 @@ const DUMMY_INFO = [
     description: "Artist creates a mural on a positive narrative",
   },
   {
-    image: artflowImg2,
-    description: "Artboardz teaches artist how to mint NFTs",
-  },
-  {
     image: artflowImg3,
-    description: "Artboardz markets and sells the NFTs",
-  },
-  {
-    image: artflowImg4,
-    description: "A public location is chosen big enough for the artwork",
+    description: "Artboardz Promotes and Sells Digital Art",
   },
   {
     image: artflowImg5,
-    description: "The proceeds are used to create physical artwork",
-  },
-  {
-    image: artflowImg6,
-    description: "Artboardz promotion means increasing artist royalties",
+    description: "Artist Creates Physical Version of the Art",
   },
 ];
 
@@ -46,7 +34,7 @@ const ArtFlowSection = () => {
           public location.
         </p>
       </article>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-x-10 lg:gap-14">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-x-10 lg:gap-14">
         {DUMMY_INFO.map((info, index) => {
           return (
             <div key={index}>
@@ -55,7 +43,7 @@ const ArtFlowSection = () => {
                 alt=""
                 className="w-8/12 mx-auto aspect-square object-cover rounded-full"
               />
-              <p className="text-xl">{info.description}</p>
+              <p className="text-xl my-3">{info.description}</p>
             </div>
           );
         })}
