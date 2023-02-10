@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-primary-color text-white text-xl  font-Montserrat h-fit w-fit border border-white  navbar z-50 absolute top-[90px] left-[5%] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
+      className={`bg-primary-color text-white text-xl  font-Montserrat h-fit w-fit border border-transparent navbar z-50 absolute top-[75px] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
     >
       <div className="hidden sm:flex justify-center w-100rem">
         <Logo/>
