@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { UIAction } from "../../store/redux-slices/UI-slice";
 import { SocialIcons } from "../Layouts/SocialIcons";
 import { useRouter } from 'next/router';
+import { CardanoWallet } from "@meshsdk/react";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -20,14 +21,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-primary-color text-white text-xl py-3 font-Montserrat h-fit w-fit border border-white  navbar z-50 absolute top-[90px] left-[5%] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
+      className={`bg-primary-color text-white text-xl  font-Montserrat h-fit w-fit border border-white  navbar z-50 absolute top-[90px] left-[5%] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
     >
-      <div className="hidden sm:flex justify-center ">
-        <Logo />
+      <div className="hidden sm:flex justify-center w-100rem">
+        <Logo/>
       </div>
 
       <ul className=" space-y-4">
-        <li onClick={toggleNavbarHandler}>
+        <li onClick={toggleNavbarHandler} className="pt-3">
           <Link href="/" className={router.pathname == "/" ? "bg-active-link px-2 w-full inline-block" : "px-2 inline-block"}>
             Home
           </Link>
@@ -47,8 +48,11 @@ const Navbar = () => {
             Leaderboardz
           </Link>
         </li>
+        <li className="sm:hidden">
+          <CardanoWallet/>
+        </li>
       </ul>
-      <div className="hidden sm:flex mx-auto mt-auto w-fit">
+      <div className="hidden xs:flex mx-auto mt-auto w-fit">
         <SocialIcons />
       </div>
     </nav>

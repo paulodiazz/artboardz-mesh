@@ -54,6 +54,7 @@
 
 .header {
   grid-area: header;
+  height: 76px;
 }
 
 .main {
@@ -92,3 +93,31 @@
     grid-area: navbar;
   }
 }
+
+.CardanoWallet__StyledMenuButton-sc-13vl5pq-0{
+  height: 40px !important;
+  border-radius: .35rem;
+  width: auto !important;
+  width: 190px !important;
+  font-size: 1rem !important;
+  
+}
+.CardanoWallet__StyledMenuButton-sc-13vl5pq-0:hover{
+border-bottom-left-radius: 0 !important;
+border-bottom-right-radius: 0 !important;
+}
+.MenuItem__StyledItem-sc-obisy3-0{
+  height: 40px !important;
+  width: 188px !important;
+}
+.CardanoWallet__StyledMenuList-sc-13vl5pq-1{
+  height: 40px !important;
+  width: inherit !important;
+  background-color: #011335;
+ 
+}
+@media (max-width: 640px) { .CardanoWallet__StyledMenuButton-sc-13vl5pq-0{
+
+  font-size: 12px !important;
+  border-radius: 0 !important;
+}}

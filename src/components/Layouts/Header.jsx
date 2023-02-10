@@ -18,7 +18,7 @@ const Header = () => {
   };
   return (
     <header
-      className={`bg-primary-color w-full header flex gap-2 px-4 py-5 items-center justify-between`}
+      className={`bg-primary-color h-{76px} w-full header flex gap-2 px-4 items-center justify-between`}
     >
       <div className="flex gap-4 sm:hidden">
         <button onClick={navbarToggleHandler}>
@@ -26,9 +26,11 @@ const Header = () => {
         </button>
         <Logo />
       </div>
-      <div className="z-40 text-[#FFFFFF] flex items-center gap-2 ml-auto">
+      <div className="flex z-40 text-[#FFFFFF] items-center gap-2 ml-auto">
+      <div className="hidden sm:flex">
         <CardanoWallet/>
-        <HeaderProfile />
+        </div>
+       <HeaderProfile /> 
       </div>
     </header>
   );
