@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 import { MeshProvider } from "@meshsdk/react";
 import { store } from "../store/redux-store";
 import Header from "@/components/Layouts//Header";
@@ -8,13 +9,27 @@ import Navbar from "@/components/Navigation/Navbar";
 import { SocialIcons } from "@/components/Layouts/SocialIcons";
 import useWindowSize from "@/hook/window-size";
 
+import React from "react";
+
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = React.useState(true);
+  React.useEffect(() => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 0);
+  }, []);
   const navBarState = useSelector(navbarState);
   const size = useWindowSize();
   const isNavShown = size.width > 640 ? true : navBarState;
 
   return (
+    
     <MeshProvider>
+    {loading ? 
+    <LoadingScreen />
+    :
     <div>
       <div
         className={`h-screen layout max-w-8xl mx-auto relative`}
@@ -40,7 +55,10 @@ function MyApp({ Component, pageProps }) {
         </main>
       </div>
     </div>
-      </MeshProvider>
+}
+    </MeshProvider>
+    
+     
   );
 }
 

@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className={`bg-primary-color text-white text-xl  font-Montserrat h-fit w-fit border border-transparent navbar z-50 absolute top-[75px] sm:relative sm:flex sm:left-0 sm:top-0 sm:flex-col sm:px-6 sm:py-8  sm:h-full sm:gap-y-8 sm:border-none`}
     >
-      <div className="hidden sm:flex justify-center w-100rem">
+      <div className="hidden sm:flex justify-center relative bottom-3">
         <Logo/>
       </div>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           <CardanoWallet/>
         </li>
       </ul>
-      <div className="hidden xs:flex mx-auto mt-auto w-fit">
+      <div className="hidden sm:flex mx-auto mt-auto w-fit">
         <SocialIcons />
       </div>
     </nav>

@@ -19,13 +19,13 @@ const DUMMY_INFO = [
   },
   {
     image: CBImg4,
-    description: "Tactfully promoting the Cardano ecosystem",
+    description: "Tactfully promoting Cardano",
   },
 ];
 
 const BenefitsSections = () => {
   return (
-    <section className="tracking-wide mb-8 text-white w-8/12 sm:w-10/12 lg:w-full mx-auto font-medium space-y-6 sm:p-4">
+    <section className="tracking-wide mb-8 text-white w-8/12 sm:w-10/12 lg:w-full mx-auto font-Montserrat font-medium space-y-6 sm:p-4">
       <h1 className="text-2xl text-center md:text-4xl">Collectors Benefits</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-3">
         {DUMMY_INFO.map((info, index) => {
@@ -34,12 +34,14 @@ const BenefitsSections = () => {
               key={index}
               className="w-full h-full flex flex-col justify-around"
             >
+              <div className="m-auto w-12/12 ">
               <Image
                 src={info.image}
                 alt="/"
-                className= 'm-auto w-15rem aspect-16/10 object-cover'
+                className= 'object-cover'
               />
-              <p className="text-xl text-center md:text-xl">
+              </div>
+              <p className="text-base text-xl text-center md:text-xl mt-4">
                 {info.description}
               </p>
             </article>
