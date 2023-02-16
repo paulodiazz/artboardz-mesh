@@ -31,22 +31,18 @@ function MyApp({ Component, pageProps }) {
     <LoadingScreen />
     :
     <div>
-      <div
-        className={`h-screen layout max-w-8xl mx-auto relative`}
-      >
+      <div className={`layout scrollbar-hide max-w-8xl mx-auto relative`}>
         <Header />
         {isNavShown && <Navbar />}
         <main
           id="main-layout"
-          className={`bg-primary-purple  min-h-full main overflow-y-auto sm:bg-transparent flex flex-col scroll-smooth`}
+          className={`bg-primary-purple main overflow-y-auto sm:bg-transparent flex flex-col scroll-smooth`}
         >
-          <div
-            className={`backdrop w-1/3 h-full absolute top-0 left-1/2 -translate-x-1/2`}
-          ></div>
+          <div className={`backdrop w-full h-full absolute top-0 left-1/2 -translate-x-1/2`} />
     
-      <Component {...pageProps} />
+          <Component {...pageProps} />
   
-    <div className="w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
+          <div className="w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
             <SocialIcons />
             <div>
               <p className="text-white font-Montserrat">Pool ID: d19db...44</p>

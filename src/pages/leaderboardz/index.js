@@ -6,12 +6,12 @@ const LeaderBoardPage = () => {
     document.querySelector("#main-layout").scrollTop = 0;
   }, []);
   return (
-    <>
+    <div className="min-h-screen">
       <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
         Leaderboardz
       </h1>
       <LeaderBoardSection />
-    </>
+    </div>
   );
 };
 

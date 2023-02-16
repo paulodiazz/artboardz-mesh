@@ -4,7 +4,7 @@ import NewReleaseInfo from "./NewReleaseInfo";
 
 const NewReleaseItem = ({ image, art, location, artist, links, id }) => {
   return (
-    <li className="bg-primary-color border-2 border-light-purple">
+    <li className="w-1/2 m-auto bg-primary-color border-2 border-light-purple">
       <Link href={`/new-releases/${id}`}>
         <NewReleaseImage image={image} />
       </Link>
