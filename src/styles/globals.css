@@ -76,18 +76,25 @@ border-bottom-right-radius: 0 !important;
 }
 .MenuItem__StyledItem-sc-obisy3-0{
   height: 40px !important;
-  width: 188px !important;
+  width: 190px !important;
+  background-color: #011335 !important;
+  border: 1px solid white !important;
+  border-color: white !important;
 }
+
 .CardanoWallet__StyledMenuList-sc-13vl5pq-1{
   height: 40px !important;
-  width: inherit !important;
-  background-color: #011335;
- 
+  width: 190px !important;
+  border: 1px !important;
+  background-color: inherit !important;
+  border: 1px !important;
 }
+
 @media (max-width: 640px) { .CardanoWallet__StyledMenuButton-sc-13vl5pq-0{
 
   font-size: 12px !important;
   border-radius: 0 !important;
+
 }}
 .bg-active-link {
   border-radius: 3px
