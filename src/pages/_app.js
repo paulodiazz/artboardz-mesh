@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
     
           <Component {...pageProps} />
   
-          <div className="h-screen w-fit mx-auto mt-auto flex items-center flex-col sm:hidden ">
+          <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col sm:hidden ">
             <SocialIcons />
             {/* <div>
               <p className="text-white font-Montserrat">Pool ID: d19db...44</p>

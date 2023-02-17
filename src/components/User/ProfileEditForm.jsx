@@ -85,7 +85,7 @@ const ProfileEditForm = ({ onCloseForm }) => {
           name="Name"
           id="Name"
           ref={nameRef}
-          className="bg-[#011335] border  px-3 border-white rounded h-10 focus:outline-blue-500 "
+          className="bg-[#011740] border  px-3 border-white rounded h-10 focus:outline-blue-500 "
           maxlength="12"
         />
       </div>
@@ -314,10 +314,12 @@ const ProfileEditForm = ({ onCloseForm }) => {
           name="Twitter"
           id="Twitter"
           ref={twitterRef}
-          className="bg-[#011335] border  px-3  border-white rounded h-10 focus:outline-blue-500 "
+          className="bg-[#011740] border  px-3  border-white rounded h-10 focus:outline-blue-500 "
         />
       </div>
-      <FormControlLabel control={<Checkbox defaultChecked /> } label="Receive Rewards" sx={{position: 'relative',right: '30%',}}/>
+      <div className="gap-2 justify-left w-full">
+      <FormControlLabel control={<Checkbox defaultChecked /> } label="Receive Rewards"/>
+      </div>
       <div className="flex gap-4 justify-center">
         <button
           type="button"

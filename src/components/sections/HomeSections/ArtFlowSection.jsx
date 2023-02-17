@@ -23,7 +23,7 @@ const DUMMY_INFO = [
 
 const ArtFlowSection = () => {
   return (
-    <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-8">
+    <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-28">
       <article>
         <h1 className="text-[40px] mt-12">The Artboardz Flow</h1>
         <p className="text-[18px] mt-10">
@@ -34,16 +34,25 @@ const ArtFlowSection = () => {
           public location.
         </p>
       </article>
-      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-x-10 lg:gap-14">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-28 gap-y-20 lg:gap-x-10 lg:gap-14">
         {DUMMY_INFO.map((info, index) => {
           return (
-            <div className="mt-10" key={index}>
+            <div
+              key={index}
+              className="w-full h-full flex flex-col align-top mt-4  ml-4"
+            >
+              <div className="m-auto h-[15rem]">
+              <div className="flex justify-center">
               <Image
                 src={info.image}
-                alt=""
-                className="w-8/12 mx-auto aspect-square object-cover rounded-full"
+                alt="/"
+                className= 'object-contain h-[15rem]'
               />
-              <p className="text-xl mt-8">{info.description}</p>
+              </div>
+              <p className=" text-base text-[20px] text-center mt-6 ">
+                {info.description}
+              </p>
+              </div>
             </div>
           );
         })}
