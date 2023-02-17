@@ -25,8 +25,8 @@ const ArtFlowSection = () => {
   return (
     <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-8">
       <article>
-        <h1 className="text-2xl mb-3 mt-0 md:text-4xl">The Artboardz Flow</h1>
-        <p className="text-base md:text-xl mt-8">
+        <h1 className="text-[40px] mt-12">The Artboardz Flow</h1>
+        <p className="text-[18px] mt-10">
           The artist first creates the digital Artboardz version. Artists have
           complete creative freedom as long as the work is imbued with a
           positive, inspiring message. Once between 30 to 50 NFTs have sold, the
@@ -37,7 +37,7 @@ const ArtFlowSection = () => {
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-x-10 lg:gap-14">
         {DUMMY_INFO.map((info, index) => {
           return (
-            <div className="mt-6" key={index}>
+            <div className="mt-10" key={index}>
               <Image
                 src={info.image}
                 alt=""
