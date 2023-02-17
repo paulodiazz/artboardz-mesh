@@ -8,7 +8,7 @@ const HeaderProfile = () => {
     <div className="flex gap-2 items-center">
       <Link
         href="/profile"
-        className="block w-[40px] aspect-square border border-[#7EAAFF] rounded-full "
+        className="block w-[41.6px] aspect-square border border-[#7EAAFF] rounded-full "
       > 
         <Avatar
           image=
