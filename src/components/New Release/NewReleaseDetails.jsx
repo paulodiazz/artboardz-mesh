@@ -42,8 +42,10 @@ const NewReleaseDetails = ({
   };
   return (
     <section className="p-4 text-white font-Montserrat">
-      <div className="border-b-2 border-light-purple pb-6">
+      <div className=" pb-6"> 
+      <div className="border-[6px] border-[#011335]">
         <NewReleaseImage image={image} />
+        </div>
         <div className="max-w-md mx-auto">
           <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
             <div className=" p-2 border rounded-lg border-light-purple text-center">
@@ -66,7 +68,7 @@ const NewReleaseDetails = ({
           />
         </div>
       </div>
-      <div className="border-b-2 border-light-purple py-6">
+      <div className="py-6">
         <NewReleaseInfo
           art={art}
           location={location}

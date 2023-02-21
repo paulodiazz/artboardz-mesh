@@ -24,7 +24,7 @@ const NewReleaseInfo = ({ art, location, artist, links, artDesc }) => {
           </a>
         </div>
       </div>
-      <p className="text-base">{artDesc}</p>
+      <p className="text-base mt-4">{artDesc}</p>
     </div>
   );
 };
