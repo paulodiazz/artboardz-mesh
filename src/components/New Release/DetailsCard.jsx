@@ -5,9 +5,9 @@ import { SocialIcons } from "../Layouts/SocialIcons";
 export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3 }) => {
   return (
     <div>
-      <div className="flex flex-row ">
+      <div className="flex flex-row">
       {image && (
-          <Image src={image} className="w-[40vw] object-cover"/>
+          <Image src={image} className="w-[50rem] object-cover"/>
       )}
       <div>
         <div className="flex flex-row content-center">
