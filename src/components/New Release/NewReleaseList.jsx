@@ -5,9 +5,8 @@ const NewReleaseList = ({ releases }) => {
     <Box sx={{justifyContent: 'center', w:'100vw', }}>
       {releases.map((release) => {
         return (
-          <Box>
+          <Box key={release.id}>
           <NewReleaseItem
-            key={release.id}
             id={release.id}
             image={release.image}
             art={release.source}
