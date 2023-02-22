@@ -55,9 +55,8 @@ const NewReleaseSection = () => {
   };
   const displayCarrousel = DUMMY_RELEASES.map((release) => {
     return (
-      <Box>
+      <Box key={release.id}>
       <NewReleaseItem
-        key={release.id}
         id={release.id}
         image={release.image}
         art={release.source}
