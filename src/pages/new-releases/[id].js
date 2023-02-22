@@ -17,16 +17,9 @@ const DUMMY_DETAILS = {
     {
       title: "Creator",
       image: SergeImage,
-      desc: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing. In 2013 he started focusing on painting animals and nature pieces in public spaces after an epiphany about the powerful connection between humans and nature.Graffiti Art Murals by SergeOne can be seen around the greater Cape Town area and is a welcome and familiar sight to all. The Art Bank knew SergeOne’s art before the artist, and is pleased to work with him.",
-    },
-    {
-      title: "Location",
-      image: releaseImg,
-      desc: "Battery Park Waterfront, Cape Town, South Africa Battery Park is located in the heart of Cape Town and connects the V&A Waterfront to the city through scenic pedestrian routes, canals, and recreational spots.The canal has a biodiverse ecosystem swarming with various fish species and several breeding pairs of Cape Clawless Otters. Access to the area is free and is buzzing with foot traffic from locals and international visitors.",
-    },
-    {
-      title: "Details",
-      desc: "If you mint the single rare NFT, the artist will paint your tag on the mural. The rare NFT also comes with an animated version.",
+      desc: "Origins is the first in a collection centering on South African tribal groups, biodiversity, and upliftment. The collection, as well as the first piece, is called Origins.",
+      desc2:"Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up haematite or red ochre minerals into a fine powder they would put in their mouth and “spray” from their mouth over their hands onto the rock face creating the hand print—making them the original graffiti artists.  In the piece, you can see the bushman is in the middle of a vision as he’s painting, where old meets new from right to left.",
+      desc3: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing.",
     },
   ],
 };
