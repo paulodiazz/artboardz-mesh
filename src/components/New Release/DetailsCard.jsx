@@ -7,7 +7,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3 }) =
     <div>
       <div className="flex flex-row ">
       {image && (
-          <Image src={image} width={"100px"} height={"100px"}/>
+          <Image src={image} className="w-[40vw] object-cover"/>
       )}
       <div>
         <div className="flex flex-row content-center">
@@ -16,9 +16,9 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3 }) =
           <SocialIcons />
           </div>
         </div>
-      {desc && <p className="text-base md:text-xl text-justify m-6">{desc}</p>}
-      {desc2 && <p className="text-base md:text-xl text-justify m-6">{desc2}</p>}
-      {desc3 && <p className="text-base md:text-xl text-justify m-6">{desc3}</p>}
+      {desc && <p className="text-base md:text-xl  m-6">{desc}</p>}
+      {desc2 && <p className="text-base md:text-xl  m-6">{desc2}</p>}
+      {desc3 && <p className="text-base md:text-xl  m-6">{desc3}</p>}
       </div>
       </div>
     </div>
