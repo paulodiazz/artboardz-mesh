@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import releaseImg from "@/assets/images/new_release.png";
 import NewReleaseDetails from "@/components/New Release/NewReleaseDetails";
 import { useRouter } from 'next/router'
+import SergeImage from "@/assets/images/SergeImage.png"
 
 const DUMMY_DETAILS = {
   Art: "Origin",
@@ -15,7 +16,7 @@ const DUMMY_DETAILS = {
   moreDetails: [
     {
       title: "Creator",
-      image: releaseImg,
+      image: SergeImage,
       desc: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing. In 2013 he started focusing on painting animals and nature pieces in public spaces after an epiphany about the powerful connection between humans and nature.Graffiti Art Murals by SergeOne can be seen around the greater Cape Town area and is a welcome and familiar sight to all. The Art Bank knew SergeOne’s art before the artist, and is pleased to work with him.",
     },
     {

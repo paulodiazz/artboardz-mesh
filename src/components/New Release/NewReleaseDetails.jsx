@@ -81,18 +81,17 @@ const NewReleaseDetails = ({
         return (
           <div key={index} className="border-b-2 border-light-purple py-6 last-of-type:border-none">
              <div className="py-6">
-        <NewReleaseInfo
-          art={art}
-          location={location}
-          artist={artist}
-          links={links}
-          artDesc={artDesc}
-        />
       </div>
             <DetailsCard
               image={info.image}
               title={info.title}
               desc={info.desc}
+              art={art}
+              location={location}
+              artist={artist}
+              links={links}
+              artDesc={artDesc}
+              
             />
           </div>
         );

@@ -5,11 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NewReleaseItem from "../../New Release/NewReleaseItem";
 import { Box } from "@mui/material";
+import SergeImage from "@/assets/images/SergeImage.png"
 
 export const DUMMY_RELEASES = [
   {
     id: "R1",
     image: releaseImg,
+    image2: SergeImage,
     source: "Origin",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
@@ -18,6 +20,7 @@ export const DUMMY_RELEASES = [
   {
     id: "R2",
     image: releaseImg,
+    image2: SergeImage,
     source: "Origin",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
@@ -26,6 +29,7 @@ export const DUMMY_RELEASES = [
   {
     id: "R3",
     image: releaseImg,
+    image2: SergeImage,
     source: "Origin",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
@@ -34,6 +38,7 @@ export const DUMMY_RELEASES = [
   {
     id: "R4",
     image: releaseImg,
+    image2: SergeImage,
     source: "Origin",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
