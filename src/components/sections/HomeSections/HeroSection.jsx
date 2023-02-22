@@ -30,7 +30,7 @@ const HeroSection = () => {
         <Slider {...settings} className="w-full mr-[20px]">
         <Box sx={{justifyContent: 'center', w:'100vw', }}>
         <Image
-          src={hero3Image}
+          src={hero0Image}
           alt=""
           className="w-full h-[82vh] rounded-[12px] "
         />
@@ -42,7 +42,7 @@ const HeroSection = () => {
         </Box>
           <Box sx={{justifyContent: 'center', w:'100vw', }}>
         <Image
-          src={hero0Image}
+          src={hero1Image}
           alt=""
           className="w-full h-[82vh] rounded-[12px] "
         />
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </Box>
         <Box sx={{justifyContent: 'center', w:'100vw', }}>
         <Image
-          src={hero1Image}
+          src={hero2Image}
           alt=""
           className="w-full h-[82vh] rounded-[12px] "
         />
@@ -68,7 +68,7 @@ const HeroSection = () => {
         </Box>
         <Box sx={{justifyContent: 'center', w:'100vw', }}>
         <Image
-          src={hero2Image}
+          src={hero3Image}
           alt=""
           className="w-full h-[82vh] rounded-[12px] "
         />
