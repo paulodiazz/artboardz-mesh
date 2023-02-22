@@ -48,7 +48,7 @@
 
 @media (max-height: 2586px) {
   .backdrop {
-    background: radial-gradient(75.93% 75.93% at 13.92% 23.07%, #0056FF 0%, #FF3800 100%) !important;
+    /* background: radial-gradient(75.93% 75.93% at 13.92% 23.07%, #0056FF 0%, #FF3800 100%) !important; */
     position: absolute;
     top: 25%;
     filter: blur(250px);
@@ -99,3 +99,52 @@ border-bottom-right-radius: 0 !important;
 .bg-active-link {
   border-radius: 3px
 }
+
+.slick-dots{
+  top: 99% !important;
+  bottom: initial!important
+}
+.slick-dots li:nth-child(1) button:before{
+  width: 25px !important;
+  height: 6px !important;
+  content: ''!important;
+  background: #727896 !important;
+  border-radius: 8px !important ;
+  
+}
+.slick-dots li:nth-child(2) button:before{
+  width: 25px !important;
+  height: 6px !important;
+  content: ''!important;
+  background: #727896 !important;
+  border-radius: 8px !important ;
+}
+.slick-dots li:nth-child(3) button:before{
+  width: 25px !important;
+  height: 6px !important;
+  content: ''!important;
+  background: #727896 !important;
+  border-radius: 8px !important ;
+}
+.slick-dots li:nth-child(4) button:before{
+  width: 25px !important;
+  height: 6px !important;
+  content: ''!important;
+  background: #727896 !important;
+  border-radius: 8px !important ;
+}
+
+/* slick-dots li button:before {
+  width: 30px !important;
+  height: 6px !important;
+  content: ''!important;
+  background: #727896 !important;
+  border-radius: 8px !important ;
+} */
+/* .slick-dots li.slick-active button {
+  width: 30px;
+height: 6px;
+
+background: #FFFFFF;
+border-radius: 8px;
+} */

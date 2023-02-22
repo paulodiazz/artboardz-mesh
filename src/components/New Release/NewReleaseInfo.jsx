@@ -5,23 +5,15 @@ import TwitterIconsOutline from "@/assets/icons/TwitterIconsOutline";
 const NewReleaseInfo = ({ art, location, artist, links, artDesc }) => {
   return (
     <div className=" tracking-wide">
-      <div className="flex gap-1 items-center justify-between mb-2">
-        <p className="text-2xl md:text-3xl font-medium">{art}</p>
-        <p className="text-sm">{`${location.city},${location.country}`}</p>
+      <div className="flex gap-1 items-center justify-between m-2">
+        <p className="text-2xl md:text-[20px] font-medium mt-2">{`${art} by ${artist}`}</p>
+        
       </div>
 
-      <div className="flex gap-1 items-center justify-between">
-        <p className="text-sm"> by {artist}</p>
+      <div className="flex gap-1 items-center justify-between m-2">
+        <p className="text-sm"> {`${location.city}, ${location.country}`}</p>
         <div className="flex gap-2 items-center">
-          <a href={links.instagram ? links.twitter : "/"}>
-            <TwitterIconsOutline className="w-5" />
-          </a>
-          <a href={links.instagram ? links.instagram : "/"}>
-            <InstagramIconsOutline className="w-5" />
-          </a>
-          <a href={links.instagram ? links.discord : "/"}>
-            <DiscordIcon className="w-5" />
-          </a>
+        <p className="text-sm">100 A</p>
         </div>
       </div>
       <p className="text-base mt-4">{artDesc}</p>

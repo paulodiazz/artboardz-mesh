@@ -39,9 +39,6 @@ const NewReleaseDetailsPage = () => {
 
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center mb-6 text-white font-Montserrat">
-        New Releases {id}
-      </h1>
       <NewReleaseDetails
         image={DUMMY_DETAILS.image}
         art={DUMMY_DETAILS.Art}

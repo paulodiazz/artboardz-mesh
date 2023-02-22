@@ -47,11 +47,16 @@ const Navbar = () => {
             Leaderboardz
           </Link>
         </li>
+        <li onClick={toggleNavbarHandler}>
+          <Link href="/about" className={router.pathname.split('/')[1] == "about" ? "bg-active-link px-2 w-full inline-block" : "px-2 inline-block"}>
+            About
+          </Link>
+        </li>
         <li className="sm:hidden">
           <CardanoWallet/>
         </li>
       </ul>
-      <div className="hidden sm:flex mx-auto mt-auto w-fit">
+      <div className="hidden sm:flex ml-2 mt-auto w-fit">
         <SocialIcons />
       </div>
     </nav>

@@ -12,9 +12,6 @@ export const SocialIcons = () => {
       <a to="/">
         <DiscordIcon />
       </a>
-      <a to="/">
-        <WebIcon />
-      </a>
     </div>
   );
 };

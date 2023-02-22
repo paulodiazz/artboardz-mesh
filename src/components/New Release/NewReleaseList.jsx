@@ -1,10 +1,11 @@
 import NewReleaseItem from "./NewReleaseItem";
-
+import { Box } from "@mui/material";
 const NewReleaseList = ({ releases }) => {
   return (
-    <ul className="flex flex-col gap-8">
+    <Box sx={{justifyContent: 'center', w:'100vw', }}>
       {releases.map((release) => {
         return (
+          <Box>
           <NewReleaseItem
             key={release.id}
             id={release.id}
@@ -14,9 +15,10 @@ const NewReleaseList = ({ releases }) => {
             artist={release.author}
             links={release.links}
           />
+          </Box>
         );
       })}
-    </ul>
+    </Box>
   );
 };
 

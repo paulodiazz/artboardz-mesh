@@ -1,5 +1,10 @@
 import NewReleaseList from "../../New Release/NewReleaseList";
 import releaseImg from "@/assets/images/new_release.png";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import NewReleaseItem from "../../New Release/NewReleaseItem";
+import { Box } from "@mui/material";
 
 export const DUMMY_RELEASES = [
   {
@@ -37,12 +42,37 @@ export const DUMMY_RELEASES = [
 ];
 
 const NewReleaseSection = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    lazyLoad: 'ondemand',
+
+  };
+  const displayCarrousel = DUMMY_RELEASES.map((release) => {
+    return (
+      <Box>
+      <NewReleaseItem
+        key={release.id}
+        id={release.id}
+        image={release.image}
+        art={release.source}
+        location={release.location}
+        artist={release.author}
+        links={release.links}
+      />
+      </Box>
+    );
+  })
   return (
-    <section className="p-5 text-white font-Montserrat">
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center mb-6">
-        New Releases
-      </h1>
-      <NewReleaseList releases={DUMMY_RELEASES} />
+    <section className="text-white font-Montserrat mr-[16px] ml-[8px] mt-[8px]">
+      <Slider {...settings} className="w-full mr-[20px] ">
+      {displayCarrousel} 
+      </Slider>
     </section>
   );
 };
