@@ -10,7 +10,7 @@ const NewReleaseItem = ({ image, art, location, artist, links, id }) => {
         <NewReleaseImage image={image} />
       </Link>
       </div>
-      <div className="p-1 h-[12vh]">
+      <div className="items-center h-[12vh]">
         <NewReleaseInfo
           art={art}
           location={location}
@@ -23,3 +23,4 @@ const NewReleaseItem = ({ image, art, location, artist, links, id }) => {
 };
 
 export default NewReleaseItem;
+ 
