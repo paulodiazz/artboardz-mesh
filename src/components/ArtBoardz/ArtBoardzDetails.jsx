@@ -13,14 +13,17 @@ const ArtBoardzDetails = ({
   artDesc,
   patrons,
   moreInfo,
+  evolution,
 }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
-    <section className="p-4 text-white font-Montserrat">
-      <div className="py-6">
+    <section className="text-white font-Montserrat">
+      <div className="mt-[8px] mr-[16px] ml-[8px]">
+      <div className="overflow-hidden rounded-[20px] border border-transparent">
         <NewReleaseImage image={image} />
-        <div className="max-w-md mx-auto">
+        </div>
+        {/* <div className="max-w-md mx-auto">
           <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
             <div className=" p-2 border rounded-lg border-light-purple text-center">
               <p>Floor</p>
@@ -34,14 +37,37 @@ const ArtBoardzDetails = ({
               <p>Royalty</p>
               <p className="font-semibold">5%</p>
             </div>
+          </div> */}
+          <div className="max-w-[70vw] mx-auto">
+          <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
+          <div className=" p-2 border rounded-lg border-light-purple text-center">
+              <p>Mint Date</p>
+              <p className="font-semibold">Feb 22, 2023</p>
+            </div>
+            <div className=" p-2 border rounded-lg border-light-purple text-center">
+              <p>Price</p>
+              <p className="font-semibold">100</p>
+            </div>
+            <div className="p-2 border rounded-lg border-light-purple text-center">
+              <p>Items</p>
+              <p className="font-semibold">40</p>
+            </div>
+            <div className="p-2  border rounded-lg border-light-purple text-center">
+              <p>Royalty</p>
+              <p className="font-semibold">5%</p>
+            </div>
+            <div className="p-2  border rounded-lg border-light-purple text-center">
+              <p>Location</p>
+              <p className="font-semibold">South Africa</p>
+            </div>
           </div>
-          <button className="bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/3 mx-auto block tracking-wide text-base my-4">
+          <button className="bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4">
             Jpgstore
           </button>
         </div>
       </div>
 
-      <div className="py-6">
+      {/* <div className="py-6">
         <NewReleaseInfo
           art={art}
           location={location}
@@ -49,12 +75,32 @@ const ArtBoardzDetails = ({
           links={links}
           artDesc={artDesc}
         />
-      </div>
+      </div> */}
+      {moreInfo.map((info, index) => {
+        return (
+          <div key={index} className="py-12 ">
+            <DetailsCard
+              image={info.image}
+              title={info.title}
+              desc={info.desc}
+              desc2={info.desc2}
+              desc3={info.desc3}
+              art={art}
+              location={location}
+              artist={artist}
+              links={links}
+              artDesc={artDesc}
+  
+              
+            />
+          </div>
+        );
+      })}
       {/* Patrons */}
       {patrons.title && (
-        <h2 className="text-2xl md:text-3xl font-medium pb-3">{patrons.title}</h2>
+        <h2 className="text-2xl md:text-3xl font-medium ml-[8px] pb-4">{patrons.title}</h2>
       )}
-      <div className="py-4" style={{ backgroundColor: '#011335' }}>
+      <div className="py-1 mx-[8px] rounded-lg" style={{ backgroundColor: '#011335' }}>
         <div className="md:flex justify-between">
           {patrons.patron.slice(0, 4).map((info, index) => {
             let first = (index + 4) % 4 === 0;
@@ -87,22 +133,13 @@ const ArtBoardzDetails = ({
             );
           })}
         </div>
-        <p className="text-center" {...getToggleProps()}>
-            {isExpanded ? 'Collapse' : 'Expand'}
+        <p className="text-center underline text-sm" {...getToggleProps()}>
+            {isExpanded ? 'Collapse' : 'View All'}
         </p>
       </div>
-
-      {moreInfo.map((info, index) => {
-        return (
-          <div key={index} className="py-6">
-            <DetailsCard
-              image={info.image}
-              title={info.title}
-              desc={info.desc}
-            />
-          </div>
-        );
-      })}
+      {evolution.title && (
+        <h2 className="text-2xl md:text-3xl font-medium ml-[8px] pb-4 pt-8">{evolution.title}</h2>
+      )}
     </section>
   );
 };

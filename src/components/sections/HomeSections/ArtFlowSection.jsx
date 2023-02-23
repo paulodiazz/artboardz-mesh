@@ -57,6 +57,9 @@ const ArtFlowSection = () => {
           );
         })}
       </div>
+      <div>
+        <h1 className="text-[40px] pt-20">Our Roadmap</h1>
+      </div>
     </section>
   );
 };

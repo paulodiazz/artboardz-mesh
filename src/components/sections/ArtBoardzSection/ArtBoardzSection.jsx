@@ -3,7 +3,7 @@ import ArtBoardzList from "../../ArtBoardz/ArtBoardzList";
 
 const ArtBoardzSection = () => {
   return (
-    <section className="text-white font-Montserrat py-4">
+    <section className="text-white font-Montserrat py-6">
       <ArtBoardzList />
     </section>
   );

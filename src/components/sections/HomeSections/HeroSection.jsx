@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const HeroSection = () => {
   const router = useRouter();
@@ -28,7 +29,7 @@ const HeroSection = () => {
     <section className=" mr-[16px] ml-[8px] mt-[8px]">
       <div className="w-full">
         <Slider {...settings} className="w-full mr-[20px]">
-        <Box sx={{justifyContent: 'center', w:'100vw', }}>
+        <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent'}}>
         <Image
           src={hero0Image}
           alt=""

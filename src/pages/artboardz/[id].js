@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import ArtBoardzDetails from "@/components/ArtBoardz/ArtBoardzDetails";
 import releaseImg from "@/assets/images/new_release.png";
 import { useRouter } from 'next/router'
+import SergeImage from "@/assets/images/SergeImage.png"
 
 const DUMMY_DETAILS = {
   Art: "Origin",
@@ -71,30 +72,43 @@ const DUMMY_DETAILS = {
     ]
 
   },
+  evolution: 
+    
+    {
+      title: "Evolution",
+      image: SergeImage,
+      image2: releaseImg,
+    },
 
   moreDetails: [
+    
     {
       title: "Creator",
-      image: releaseImg,
-      desc: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing. In 2013 he started focusing on painting animals and nature pieces in public spaces after an epiphany about the powerful connection between humans and nature.Graffiti Art Murals by SergeOne can be seen around the greater Cape Town area and is a welcome and familiar sight to all. The Art Bank knew SergeOne’s art before the artist, and is pleased to work with him.",
+      image: SergeImage,
+      desc: "Origins is the first in a collection centering on South African tribal groups, biodiversity, and upliftment. The collection, as well as the first piece, is called Origins.",
+      desc2:"Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up haematite or red ochre minerals into a fine powder they would put in their mouth and “spray” from their mouth over their hands onto the rock face creating the hand print—making them the original graffiti artists.  In the piece, you can see the bushman is in the middle of a vision as he’s painting, where old meets new from right to left.",
+      desc3: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing.",
     },
-    {
-      title: "Location",
-      desc: "Battery Park Waterfront, Cape Town, South Africa Battery Park is located in the heart of Cape Town and connects the V&A Waterfront to the city through scenic pedestrian routes, canals, and recreational spots.The canal has a biodiverse ecosystem swarming with various fish species and several breeding pairs of Cape Clawless Otters. Access to the area is free and is buzzing with foot traffic from locals and international visitors.",
-    },
-    {
-      title: "Origins Evolution",
-      desc: "Digital",
-      image: releaseImg,
-    },
-    {
-      desc: "Location",
-      image: releaseImg,
-    },
-    {
-      desc: "Artboard",
-      image: releaseImg,
-    },
+
+   
+    
+    // {
+    //   title: "Location",
+    //   desc: "Battery Park Waterfront, Cape Town, South Africa Battery Park is located in the heart of Cape Town and connects the V&A Waterfront to the city through scenic pedestrian routes, canals, and recreational spots.The canal has a biodiverse ecosystem swarming with various fish species and several breeding pairs of Cape Clawless Otters. Access to the area is free and is buzzing with foot traffic from locals and international visitors.",
+    // },
+    // {
+    //   title: "Origins Evolution",
+    //   desc: "Digital",
+    //   image: releaseImg,
+    // },
+    // {
+    //   desc: "Location",
+    //   image: releaseImg,
+    // },
+    // {
+    //   desc: "Artboard",
+    //   image: releaseImg,
+    // },
   ],
 };
 
@@ -107,9 +121,9 @@ const ArtBoardzDetailsPage = () => {
 
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      {/* <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
         Artboardz {id}
-      </h1>
+      </h1> */}
       <ArtBoardzDetails
         image={DUMMY_DETAILS.image}
         art={DUMMY_DETAILS.Art}
@@ -119,6 +133,7 @@ const ArtBoardzDetailsPage = () => {
         artDesc={DUMMY_DETAILS.artDesc}
         patrons={DUMMY_DETAILS.patrons}
         moreInfo={DUMMY_DETAILS.moreDetails}
+        evolution={DUMMY_DETAILS.evolution}
       />
     </>
   );

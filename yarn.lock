@@ -264,15 +264,15 @@
   resolved "https://registry.yarnpkg.com/@emurgo/cardano-message-signing-nodejs/-/cardano-message-signing-nodejs-1.0.1.tgz#b2fa1f7541055a6c4b8e805492b1a9362bea5835"
   integrity sha512-PoKh1tQnJX18f8iEr8Jk1KXxKCn9eqaSslMI1pyOJvYRJhQVDLCh0+9YReufjp0oFJIY1ShcrR+4/WnECVZUKQ==
 
-"@emurgo/cardano-serialization-lib-browser@11.1.1":
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/@emurgo/cardano-serialization-lib-browser/-/cardano-serialization-lib-browser-11.1.1.tgz#1621c1ff657a49f9731e8046ed7d7952f9064ce8"
-  integrity sha512-pxG6wQwtj38he6Ulzc2uo0L0j4mln3oqZPwNmgRz62eYwlPXG1Kg3EAgx5l2lgUk+CEQrWekUomtQUhywYCAJw==
+"@emurgo/cardano-serialization-lib-browser@11.3.0":
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/@emurgo/cardano-serialization-lib-browser/-/cardano-serialization-lib-browser-11.3.0.tgz#d45716e4034db2ba3e757c5e947d01c790ebded1"
+  integrity sha512-ZGycjKLslHvZNc9u5tl5dvvcNVUmJ42HJF2zCI0/jtXJ3gaU4A1msAOTXAQYyPkGGaQuqUyd8Ixvnu94LPalsw==
 
-"@emurgo/cardano-serialization-lib-nodejs@11.1.1":
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/@emurgo/cardano-serialization-lib-nodejs/-/cardano-serialization-lib-nodejs-11.1.1.tgz#4c53690c6ecf53fd791e27264a6ffed78fa784b0"
-  integrity sha512-qYMSlFWPY0bB7Lys+eaSN8p3NrwmmcMM0j3c3TgLeVl9jAJsNSFqwFLEyD50u6nF/DkA49ixo2P1K/luZ24thg==
+"@emurgo/cardano-serialization-lib-nodejs@11.3.0":
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/@emurgo/cardano-serialization-lib-nodejs/-/cardano-serialization-lib-nodejs-11.3.0.tgz#f8896ba4dd4411c97503d99f8fbcd2ef23087646"
+  integrity sha512-F1WXfvTtOZkJf3mSA9yToJaLCpPNOqyK5IljigS8fHxrLjSDEqVGVmQNM2R0NQTNsQLKxcSPBf0I3gukgoHnbQ==
 
 "@emurgo/cip14-js@3.0.1":
   version "3.0.1"
@@ -353,25 +353,25 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@meshsdk/core@1.2.0-beta.4":
-  version "1.2.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@meshsdk/core/-/core-1.2.0-beta.4.tgz#2509a36af7d065101a02bb8ce7ee669f753a31ea"
-  integrity sha512-AiBbG2ABKu0KVEcFHagX/jJX8KYOViOoxEwXO/3izjIiOIzJy3hhyJhjeVmzPxwnYcKLlIllGC17zPyVrM6kQg==
+"@meshsdk/core@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@meshsdk/core/-/core-1.5.1.tgz#6f120505523365b28757dcff3df93a3434c7c41f"
+  integrity sha512-qD1f39ylCy2jlTccGxppbmykLbQhzPWagc77Lsn7k0eIzrfB/JQBLxYD0e/eTvr55uZ08qV456vLKl2RSQ9u+g==
   dependencies:
     "@emurgo/cardano-message-signing-browser" "1.0.1"
     "@emurgo/cardano-message-signing-nodejs" "1.0.1"
-    "@emurgo/cardano-serialization-lib-browser" "11.1.1"
-    "@emurgo/cardano-serialization-lib-nodejs" "11.1.1"
+    "@emurgo/cardano-serialization-lib-browser" "11.3.0"
+    "@emurgo/cardano-serialization-lib-nodejs" "11.3.0"
     "@emurgo/cip14-js" "3.0.1"
     axios "0.27.2"
     bip39 "3.0.4"
     nanoid "3.3.4"
     zod "3.19.1"
 
-"@meshsdk/react@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@meshsdk/react/-/react-1.1.1.tgz#eae86509b2f14cef98a4d4b58c2c70b6e7ca828e"
-  integrity sha512-x5QXhJmTIdvcgp/yEwUkw/zB0w4h69+LdeUEhsE/MLFA1uSFpaEDo4RTBzrAGyhZuQOTkYDlpwCK7+zBGejwpQ==
+"@meshsdk/react@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@meshsdk/react/-/react-1.1.6.tgz#be568db31ff300e67b2b36bf95cecea446eba50b"
+  integrity sha512-4qaNsp6b6VrIrS0UsCr7NcCw3qKsxGc0bcM4x1XX5R1eh7abSxFzzbNbMCWOympclQPrS77Y1tmpGeTQiJRMzQ==
   dependencies:
     styled-components "5.3.6"
 

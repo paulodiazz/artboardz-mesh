@@ -8,7 +8,7 @@ const ArtBoardzItem = ({ image, art, location, artist, links, id }) => {
       <Link href={`/artboardz/${id}`} className=" h-[266px] md:h-[228px] block">
         <Image src={image} alt="/" className="w-full h-full object-cover " />
       </Link> 
-      <div className="p-4">
+      <div className="p-3">
         <ArtBoardzInfo
           art={art}
           location={location}

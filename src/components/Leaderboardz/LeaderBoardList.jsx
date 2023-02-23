@@ -4,7 +4,7 @@ import photo from "@/assets/images/ProfilePhoto.png";
 const DUMMY_LEADERS = [
   {
     image: photo,
-    name: "Edmund scnmc cdjkfv cvnjkdx bkdscjk ",
+    name: "The Art Bank ",
     amount: 20,
   },
   {
@@ -36,7 +36,7 @@ const DUMMY_LEADERS = [
 
 const LeaderBoardList = () => {
   return (
-    <ul className="bg-primary-color p-4 grid gap-3 rounded-lg">
+    <ul className="bg-primary-color p-4 grid gap-3 rounded-lg max-w-[60vw] m-auto">
       {DUMMY_LEADERS.map((leader, index) => {
         return (
           <div

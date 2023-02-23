@@ -97,7 +97,7 @@ border-bottom-right-radius: 0 !important;
 
 }}
 .bg-active-link {
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 .slick-dots{
@@ -134,13 +134,14 @@ border-bottom-right-radius: 0 !important;
   border-radius: 8px !important ;
 }
 
+
 /* slick-dots li button:before {
   width: 30px !important;
   height: 6px !important;
   content: ''!important;
   background: #727896 !important;
   border-radius: 8px !important ;
-} */
+} 
 /* .slick-dots li.slick-active button {
   width: 30px;
 height: 6px;

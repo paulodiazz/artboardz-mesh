@@ -1,8 +1,17 @@
 
 const BillboardSection = () => {
   return (
-    <section className="text-white font-Montserrat p-5 font-medium mb-8">
+    <section className="text-white font-Montserrat mt-[8px] mr-[8px] ml-[8px] font-medium mb-8">
       <article className="space-y-5">
+      <div className="">
+          <iframe
+            className=" w-full h-[60vh] aspect-video  mx-auto"
+            src="https://www.youtube.com/embed/pPVyCC7sbyM"
+            title="YouTube video player"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
         <h1 className="  text-[40px] text-center tracking-wide px-3">
           Replacing Billboards with Art
         </h1>
@@ -24,16 +33,6 @@ const BillboardSection = () => {
           survive, allowing the owners to enjoy their beauty and the artist to
           receive royalties on sales, which they were never able to do before.
         </p>
-
-        <div className="">
-          <iframe
-            className=" w-full lg:w-[700px] aspect-video  mx-auto mt-12"
-            src="https://www.youtube.com/embed/pPVyCC7sbyM"
-            title="YouTube video player"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
       </article>
     </section>
   );

@@ -41,9 +41,9 @@ const NewReleaseDetails = ({
     setQuantity((oldState) => (oldState > 1 ? oldState - 1 : 1));
   };
   return (
-    <section className="p-4 text-white font-Montserrat">
-      <div className=" pb-6"> 
-      <div className="overflow-hidden rounded-[20px]">
+    <section className="text-white font-Montserrat">
+      <div className=" mt-[8px] mr-[16px] ml-[8px]"> 
+      <div className="overflow-hidden rounded-[20px] border border-transparent">
         <NewReleaseImage image={image} />
         </div>
         <div className="max-w-[70vw] mx-auto">
@@ -79,9 +79,7 @@ const NewReleaseDetails = ({
      
       {moreInfo.map((info, index) => {
         return (
-          <div key={index} className="py-6 ">
-             <div className="py-6">
-      </div>
+          <div key={index} className="py-4 ">
             <DetailsCard
               image={info.image}
               title={info.title}
@@ -93,6 +91,7 @@ const NewReleaseDetails = ({
               artist={artist}
               links={links}
               artDesc={artDesc}
+  
               
             />
           </div>
