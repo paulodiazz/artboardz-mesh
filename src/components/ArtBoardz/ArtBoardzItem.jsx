@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 const ArtBoardzItem = ({ image, art, location, artist, links, id }) => {
   return (
-    <li className="h-[370px] bg-primary-color border-2 border-light-purple">
+    <li className="h-30rem bg-primary-color border-2 border-light-purple rounded-lg overflow-hidden">
       <Link href={`/artboardz/${id}`} className=" h-[266px] md:h-[228px] block">
         <Image src={image} alt="/" className="w-full h-full object-cover " />
-      </Link>
+      </Link> 
       <div className="p-4">
         <ArtBoardzInfo
           art={art}

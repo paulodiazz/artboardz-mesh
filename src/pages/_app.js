@@ -10,6 +10,7 @@ import { SocialIcons } from "@/components/Layouts/SocialIcons";
 import useWindowSize from "@/hook/window-size";
 
 import React from "react";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true);
@@ -23,9 +24,11 @@ function MyApp({ Component, pageProps }) {
   const navBarState = useSelector(navbarState);
   const size = useWindowSize();
   const isNavShown = size.width > 640 ? true : navBarState;
+  const router = useRouter();
 
+  const paths = ["/","/new-releases"];
   return (
-    
+     
     <MeshProvider>
     {loading ? 
     <LoadingScreen />
@@ -38,8 +41,8 @@ function MyApp({ Component, pageProps }) {
           id="main-layout"
           className={` bg-primary-purple main overflow-y-auto bg-transparent flex flex-col scroll-smooth`}
         >
-          <div className={`backdrop w-full h-full absolute top-0 left-1/2 -translate-x-1/2`} />
-    
+          {!paths.includes(router.pathname) ? <div className={`backdrop w-full h-full absolute top-0 left-1/2 -translate-x-1/2`}  /> :<div></div>
+            }
           <Component {...pageProps} />
   
           <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col sm:hidden ">

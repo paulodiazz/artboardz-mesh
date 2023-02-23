@@ -3,7 +3,7 @@ import Image from 'next/image'
 const NewReleaseImage = (props) => {
   return (
     
-      <Image src={props.image} alt="/" className="w-full lg:h-[68vh]  object-cover object-top" />
+      <Image src={props.image} alt="/" className="w-full max-h-[72vh]  object-cover object-topz-0" />
     
   );
 };

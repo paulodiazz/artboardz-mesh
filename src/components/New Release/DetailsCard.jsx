@@ -7,7 +7,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3 }) =
     <div>
       <div className="flex flex-row">
       {image && (
-          <Image src={image} className="w-[50rem] object-cover"/>
+          <Image src={image} className="w-[40rem] object-cover"/>
       )}
       <div>
         <div className="flex flex-row content-center">
