@@ -74,9 +74,11 @@ const NewReleaseSection = () => {
   })
   return (
     <section className="text-white font-Montserrat mr-[16px] ml-[8px] mt-[8px]">
+      <Box sx={{justifyContent: 'center', w:'100vw', }}>
       <Slider {...settings} className="w-full mr-[20px] ">
       {displayCarrousel} 
       </Slider>
+      </Box>
     </section>
   );
 };
