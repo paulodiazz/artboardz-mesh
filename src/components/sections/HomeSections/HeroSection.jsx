@@ -1,8 +1,8 @@
 import heroImage from "@/assets/images/heroImage.png";
-import hero0Image from "@/assets/images/hero0Image.png";
-import hero1Image from "@/assets/images/hero1Image.png";
-import hero2Image from "@/assets/images/hero2Image.png";
-import hero3Image from "@/assets/images/hero3Image.png";
+import hero0Image from "@/assets/images/hero0.png";
+import hero1Image from "@/assets/images/hero1.png";
+import hero2Image from "@/assets/images/hero2.png";
+import hero3Image from "@/assets/images/hero3.png";
 import Image from 'next/image'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
@@ -29,7 +29,7 @@ const HeroSection = () => {
     <section className=" mr-[16px] ml-[8px] mt-[8px]">
       <div className="w-full">
         <Slider {...settings} className="w-full mr-[20px]">
-        <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent'}}>
+        <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', }}>
         <Image
           src={hero0Image}
           alt=""
