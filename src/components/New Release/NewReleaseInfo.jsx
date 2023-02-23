@@ -12,10 +12,10 @@ const NewReleaseInfo = ({ art, location, artist, links, artDesc }) => {
         
       </div>
 
-      <div className="flex gap-1 items-center justify-between m-2 mb-4">
+      <div className="flex gap-1 items-center justify-between m-2 mb-0">
         <p className="text-sm"> {`${location.city}, ${location.country}`}</p>
         <div className="flex gap-2 items-center">
-        <p className="text-sm">100 </p>
+        <p className="text-lg">100 </p>
         <Image src={CardanoIcon} height={20}/>
         </div>
       </div>
