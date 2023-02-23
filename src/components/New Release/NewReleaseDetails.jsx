@@ -79,7 +79,7 @@ const NewReleaseDetails = ({
      
       {moreInfo.map((info, index) => {
         return (
-          <div key={index} className="py-4 ">
+          <div key={index} className="py-4 mt-[28px] ">
             <DetailsCard
               image={info.image}
               title={info.title}

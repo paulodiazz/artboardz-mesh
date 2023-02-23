@@ -3,7 +3,7 @@ import NewReleaseImage from "../New Release/NewReleaseImage";
 import NewReleaseInfo from "../New Release/NewReleaseInfo";
 import { PatronsCard } from "../New Release/PatronsCard";
 import useCollapse from 'react-collapsed'
-
+import Colapse from './Colapse'
 const ArtBoardzDetails = ({
   image,
   art,
@@ -140,6 +140,7 @@ const ArtBoardzDetails = ({
       {evolution.title && (
         <h2 className="text-2xl md:text-3xl font-medium ml-[8px] pb-4 pt-8">{evolution.title}</h2>
       )}
+      <Colapse/>
     </section>
   );
 };
