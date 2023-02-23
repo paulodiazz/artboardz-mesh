@@ -34,7 +34,7 @@ const DUMMY_ARTS = [
 
 const ArtBoardzList = () => {
   return (
-    <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-2 m-2 mx-6">
+    <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-2  ">
       {DUMMY_ARTS.map((release) => {
         return (
           <ArtBoardzItem

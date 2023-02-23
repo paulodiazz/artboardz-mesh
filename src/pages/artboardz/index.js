@@ -8,11 +8,13 @@ const ArtBoardzPage = () => {
   }, []);
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      {/* <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
         Artboardz
-      </h1>
+      </h1> */}
+      <div className="ml-4 mr-8">
       <SearchBar />
       <ArtBoardzSection />
+      </div>
     </>
   );
 };

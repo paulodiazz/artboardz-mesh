@@ -11,7 +11,7 @@ const SearchBar = () => {
     setFilterIsShown((oldState) => !oldState);
   };
   return (
-    <form className="border border-white rounded-md grid grid-cols-search gap-3 p-2 sm:p-3 w-11/12 mx-auto items-center text-white font-Montserrat relative">
+    <form className="border border-white rounded-md grid grid-cols-search gap-3 p-2 sm:p-3 w-full mx-auto items-center text-white font-Montserrat">
       <label htmlFor="search" className="sr-only">
         Search bar
       </label>

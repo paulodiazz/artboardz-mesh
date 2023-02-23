@@ -60,7 +60,7 @@ const HeroSection = () => {
           className="w-full h-[82vh] rounded-[12px] "
         />
         <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-          <h1 className="  text-[40px] text-center tracking-wide text-white ">Our Top Artboardz Collectorss</h1>
+          <h1 className="  text-[40px] text-center tracking-wide text-white ">Our Top Artboardz Collectors</h1>
           <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
           <Link href="/leaderboardz" className={router.pathname.split('/')[1] == "leaderboardz" }>View</Link>
           </button>
