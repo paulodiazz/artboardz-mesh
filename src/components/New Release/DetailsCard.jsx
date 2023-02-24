@@ -20,9 +20,9 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3 }) =
           <SocialIcons />
           </div> 
         </div>
-      {desc && <p className="text-base md:text-xl  m-6">{desc}</p>}
-      {desc2 && <p className="text-base md:text-xl  m-6">{desc2}</p>}
-      {desc3 && <p className="text-base md:text-xl  m-6">{desc3}</p>}
+      {desc && <p className="text-base md:text-xl  m-6 max-w-[550px]">{desc}</p>}
+      {desc2 && <p className="text-base md:text-xl  m-6 max-w-[550px]">{desc2}</p>}
+      {desc3 && <p className="text-base md:text-xl  m-6 max-w-[550px]">{desc3}</p>}
       </div>
       </div>
     </div>
