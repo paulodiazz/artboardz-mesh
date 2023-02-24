@@ -1,4 +1,4 @@
-import heroImage from "@/assets/images/heroImage.png";
+
 import hero0Image from "@/assets/images/hero0.png";
 import hero1Image from "@/assets/images/hero1.png";
 import hero2Image from "@/assets/images/hero2.png";
@@ -11,6 +11,37 @@ import { Box } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import { NodeNextRequest } from "next/dist/server/base-http/node";
+
+export const HERO_DATA = [
+  {
+    id: "H0",
+    image: hero0Image,
+    title: "Replacing Billboards With Art",
+    button: "Explore",
+    ref: "artboardz"
+  },
+  {
+    id: "H1",
+    image: hero1Image,
+    title: "Support Our New Collections",
+    button: "Support",
+    ref: "new-releases"
+  },
+  {
+    id: "H2",
+    image: hero2Image,
+    title: "Our Top Artboardz Collectors",
+    button: "View",
+    ref: "leaderboardz"
+  },
+  {
+    id: "H3",
+    image: hero3Image,
+    title: "How Artboardz Works",
+    button: "Learn",
+    ref: "about"
+ },
+];
 
 const HeroSection = () => {
   const router = useRouter();
@@ -25,61 +56,27 @@ const HeroSection = () => {
     lazyLoad: 'ondemand',
 
   };
+  const displayHero = HERO_DATA.map((hero) => {
+    return (
+      <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
+      <Image
+        src={hero.image}
+        alt=""
+        className="w-full h-[82vh] rounded-[12px] overflow-hidden"
+      />
+      <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
+        <h1 className="  text-[40px] text-center tracking-wide text-white ">{hero.title}</h1>
+        <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
+        <Link href={'/'+hero.ref} className={router.pathname.split('/')[1] == hero.ref }>{hero.button}</Link>          </button>
+      </div>
+      </Box>
+    );
+  })
   return (
-    <section className=" mr-[16px] ml-[8px] mt-[8px]">
-      <div className="w-full">
-        <Slider {...settings} className="w-full mr-[20px]">
-        <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', }}>
-        <Image
-          src={hero0Image}
-          alt=""
-          className="w-full h-[82vh] rounded-[12px] object-cover"
-        />
-        <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-          <h1 className="  text-[40px] text-center tracking-wide text-white ">Replacing Billboards With Art</h1>
-          <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
-          <Link href="/artboardz" className={router.pathname.split('/')[1] == "artboardz" }>Explore</Link>          </button>
-        </div>
-        </Box>
-          <Box sx={{justifyContent: 'center', w:'100vw', }}>
-        <Image
-          src={hero1Image}
-          alt=""
-          className="w-full h-[82vh] rounded-[12px] object-cover"
-        />
-        <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-          <h1 className="  text-[40px] text-center tracking-wide text-white ">Support Our New Collections</h1>
-          <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
-            <Link href="/new-releases" className={router.pathname.split('/')[1] == "new-releases" }>Support</Link>
-          </button>
-        </div>
-        </Box>
-        <Box sx={{justifyContent: 'center', w:'100vw', }}>
-        <Image
-          src={hero2Image}
-          alt=""
-          className="w-full h-[82vh] rounded-[12px] object-cover"
-        />
-        <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-          <h1 className="  text-[40px] text-center tracking-wide text-white ">Our Top Artboardz Collectors</h1>
-          <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
-          <Link href="/leaderboardz" className={router.pathname.split('/')[1] == "leaderboardz" }>View</Link>
-          </button>
-        </div>
-        </Box>
-        <Box sx={{justifyContent: 'center', w:'100vw', }}>
-        <Image
-          src={hero3Image}
-          alt=""
-          className="w-full h-[82vh] rounded-[12px] object-cover"
-        />
-        <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-          <h1 className="  text-[40px] text-center tracking-wide text-white ">How Artboardz Works</h1>
-          <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
-          <Link href="/about" className={router.pathname.split('/')[1] == "about" }>Learn</Link>
-          </button>
-        </div>
-        </Box>
+    <section className=" mr-[16px] ml-[8px] mt-[8px] rounded-[12px]">
+      <div className="w-full rounded-[12px]">
+        <Slider {...settings} className="w-full mr-[20px] rounded-[12px] overflow-hidden">
+          {displayHero}
         </Slider>
       </div>
     </section>
