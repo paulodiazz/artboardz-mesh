@@ -1,9 +1,12 @@
 import { DetailsCard } from "../New Release/DetailsCard";
 import NewReleaseImage from "../New Release/NewReleaseImage";
-import NewReleaseInfo from "../New Release/NewReleaseInfo";
 import { PatronsCard } from "../New Release/PatronsCard";
 import useCollapse from 'react-collapsed'
-import Colapse from './Colapse'
+import { useState } from "react";
+import Image from "next/image";
+import image1 from '@/assets/images/hero0.png'
+import image2 from '@/assets/images/hero1.png'
+
 const ArtBoardzDetails = ({
   image,
   art,
@@ -17,27 +20,17 @@ const ArtBoardzDetails = ({
 }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
+  const [checked, setChecked] = useState(false);
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
+
   return (
     <section className="text-white font-Montserrat">
       <div className="mt-[8px] mr-[16px] ml-[8px]">
       <div className="overflow-hidden rounded-[20px] border border-transparent">
         <NewReleaseImage image={image} />
         </div>
-        {/* <div className="max-w-md mx-auto">
-          <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
-            <div className=" p-2 border rounded-lg border-light-purple text-center">
-              <p>Floor</p>
-              <p className="font-semibold">100</p>
-            </div>
-            <div className="p-2 border rounded-lg border-light-purple text-center">
-              <p>Listings</p>
-              <p className="font-semibold">5/40</p>
-            </div>
-            <div className="p-2  border rounded-lg border-light-purple text-center">
-              <p>Royalty</p>
-              <p className="font-semibold">5%</p>
-            </div>
-          </div> */}
           <div className="max-w-[70vw] mx-auto">
           <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
           <div className=" p-2 border rounded-lg border-light-purple text-center">
@@ -140,7 +133,19 @@ const ArtBoardzDetails = ({
       {evolution.title && (
         <h2 className="text-2xl md:text-3xl font-medium ml-[8px] pb-4 pt-8">{evolution.title}</h2>
       )}
-      <Colapse/>
+      {/* <Colapse/> */}
+      <div className="flex mx-2 my-4">
+        <div className={"flex bg-orange-500 transition-all " + (checked ? "w-1/5" : "w-4/5")}>
+          <button onClick={handleChange} className="w-full">
+            <Image src={image1} className={'object-none h-[800px]'} />
+          </button>
+        </div>
+        <div className={"flex bg-emerald-500 transition-all " + (checked ? "w-4/5" : "w-1/5")}>
+          <button onClick={handleChange} className="w-full">
+            <Image src={image2} className={'object-none h-[800px]'} />
+          </button>
+        </div>
+      </div>
     </section>
   );
 };

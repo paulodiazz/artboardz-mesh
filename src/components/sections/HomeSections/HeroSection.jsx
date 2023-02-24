@@ -33,7 +33,7 @@ const HeroSection = () => {
         <Image
           src={hero0Image}
           alt=""
-          className="w-full h-[82vh] rounded-[12px] "
+          className="w-full h-[82vh] rounded-[12px] object-cover"
         />
         <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
           <h1 className="  text-[40px] text-center tracking-wide text-white ">Replacing Billboards With Art</h1>
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <Image
           src={hero1Image}
           alt=""
-          className="w-full h-[82vh] rounded-[12px] "
+          className="w-full h-[82vh] rounded-[12px] object-cover"
         />
         <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
           <h1 className="  text-[40px] text-center tracking-wide text-white ">Support Our New Collections</h1>
@@ -58,7 +58,7 @@ const HeroSection = () => {
         <Image
           src={hero2Image}
           alt=""
-          className="w-full h-[82vh] rounded-[12px] "
+          className="w-full h-[82vh] rounded-[12px] object-cover"
         />
         <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
           <h1 className="  text-[40px] text-center tracking-wide text-white ">Our Top Artboardz Collectors</h1>
@@ -71,7 +71,7 @@ const HeroSection = () => {
         <Image
           src={hero3Image}
           alt=""
-          className="w-full h-[82vh] rounded-[12px] "
+          className="w-full h-[82vh] rounded-[12px] object-cover"
         />
         <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
           <h1 className="  text-[40px] text-center tracking-wide text-white ">How Artboardz Works</h1>
