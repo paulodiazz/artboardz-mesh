@@ -58,7 +58,7 @@ const HeroSection = () => {
   };
   const displayHero = HERO_DATA.map((hero) => {
     return (
-      <Box sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
+      <Box key={hero.id} sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
       <Image
         src={hero.image}
         alt=""
