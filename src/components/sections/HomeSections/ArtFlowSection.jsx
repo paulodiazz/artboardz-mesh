@@ -1,9 +1,7 @@
 import artflowImg1 from "@/assets/images/Artflow1.png";
-import artflowImg2 from "@/assets/images/Artflow2.png";
-import artflowImg3 from "@/assets/images/Artflow3.png";
-import artflowImg4 from "@/assets/images/Artflow4.png";
-import artflowImg5 from "@/assets/images/Artflow5.png";
-import artflowImg6 from "@/assets/images/Artflow6.png";
+import artflowImg3 from "@/assets/images/Artflow2.png";
+import artflowImg5 from "@/assets/images/Artflow3.png";
+
 import Image from 'next/image'
 
 const DUMMY_INFO = [
@@ -39,7 +37,7 @@ const ArtFlowSection = () => {
           return (
             <div
               key={index}
-              className="w-full h-full flex flex-col align-top mt-4  ml-4"
+              className="w-full h-full flex flex-col align-top mt-4  "
             >
               <div className="m-auto h-[15rem]">
               <div className="flex justify-center">
