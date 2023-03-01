@@ -7,9 +7,9 @@ const MyProfilePage = () => {
   }, []);
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      {/* <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
         My Profile
-      </h1>
+      </h1> */}
       <MyProfileSection />
     </>
   );

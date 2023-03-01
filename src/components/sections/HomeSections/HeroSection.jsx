@@ -1,5 +1,5 @@
 
-import hero0Image from "@/assets/images/hero0.png";
+import hero0Image from "@/assets/images/hero0.jpg";
 import hero1Image from "@/assets/images/hero1.png";
 import hero2Image from "@/assets/images/hero2.png";
 import hero3Image from "@/assets/images/hero3.png";
@@ -56,17 +56,17 @@ const HeroSection = () => {
     lazyLoad: 'ondemand',
 
   };
-  const displayHero = HERO_DATA.map((hero) => {
+  const displayHero = HERO_DATA.map((hero, index) => {
     return (
-      <Box key={hero.id} sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
+      <Box key={index} sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
       <Image
         src={hero.image}
         alt=""
-        className="w-full h-[82vh] rounded-[12px] overflow-hidden"
+        className="w-full h-[82vh] rounded-[12px] overflow-hidden object-cover"
       />
       <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
         <h1 className="  text-[40px] text-center tracking-wide text-white ">{hero.title}</h1>
-        <button className="bg-[#6E028F] text-white py-2 px-4 rounded-md text-base tracking-wide font-Montserrat font-medium mx-auto block my-6 sm:mx-0">
+        <button className="bg-[#6E028F] w-[194px] h-[46px] text-white py-2 px-4 rounded-md text-base tracking-wide font-Poppins font-[16px] mx-auto block my-6 sm:mx-0">
         <Link href={'/'+hero.ref} className={router.pathname.split('/')[1] == hero.ref }>{hero.button}</Link>          </button>
       </div>
       </Box>
@@ -75,7 +75,7 @@ const HeroSection = () => {
   return (
     <section className=" mr-[16px] ml-[8px] mt-[8px] rounded-[12px]">
       <div className="w-full rounded-[12px]">
-        <Slider {...settings} className="w-full mr-[20px] rounded-[12px] overflow-hidden">
+        <Slider {...settings} className="w-full mr-[20px] rounded-[12px]">
           {displayHero}
         </Slider>
       </div>

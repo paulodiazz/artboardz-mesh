@@ -7,9 +7,9 @@ const LeaderBoardPage = () => {
   }, []);
   return (
     <div className="min-h-screen">
-      <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      {/* <h1 className="text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
         Leaderboardz
-      </h1>
+      </h1> */}
       <LeaderBoardSection />
     </div>
   );
