@@ -10,6 +10,10 @@ const DUMMY_DETAILS = {
   image: releaseImg,
   location: { city: "Cape Town", country: "South Africa" },
   links: { instagram: "/", twitter: "/", discord: "/" },
+  mintDate: "Feb 22, 2023",
+  price:"100",
+  items:"40",
+  royalty:"5%",
   artDesc:
     "Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up a red ochre mineral into fine powder. They would then put it in their mouth and spray it over their hands and onto the rock face which would create a hand print. This made them the original graffiti artists. ",
 
@@ -41,6 +45,10 @@ const NewReleaseDetailsPage = () => {
         links={DUMMY_DETAILS.links}
         artDesc={DUMMY_DETAILS.artDesc}
         moreInfo={DUMMY_DETAILS.moreDetails}
+        mintDate={DUMMY_DETAILS.mintDate}
+        price={DUMMY_DETAILS.price}
+        items={DUMMY_DETAILS.items}
+        royalty={DUMMY_DETAILS.royalty}
       />
     </>
   );

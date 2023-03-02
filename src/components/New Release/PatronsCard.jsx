@@ -11,12 +11,12 @@ export const PatronsCard = ({ image, name, twitter, country, assets }) => {
         <div className="flex">
           <h2 className="flex-none font-semibold">{name}</h2>
           {twitter &&
-            <a className="flex-initial" href={twitter}><TwitterIconsOutline className="ml-2 w-4" /></a>
+            <a className="flex-initial" href={twitter}><TwitterIconsOutline className="ml-2 w-4 mt-1" /></a>
           }
         </div>
         <div>
           <p className="lead">{country}</p>
-          <p>{assets} assets</p>
+          <p>{assets} Artboardz</p>
         </div>
       </div>
     </div>

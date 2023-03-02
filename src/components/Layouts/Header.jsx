@@ -5,7 +5,7 @@ import { CardanoWallet} from "@meshsdk/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import UserBalance from "../User/UserBalance";
 import HeaderProfile from "../User/HeaderProfile";
-import { Logo } from "./Logo";
+import { LogoSmall } from "./LogoSmall";
 import { UIAction } from "../../store/redux-slices/UI-slice";
 
 
@@ -24,10 +24,10 @@ const Header = () => {
         <button onClick={navbarToggleHandler}>
           <Bars3Icon className="w-8 text-white" />
         </button>
-        <Logo />
+        <LogoSmall />
       </div>
       <div className="flex z-40 text-[#FFFFFF] items-center gap-2 ml-auto">
-      <div className="hidden sm:flex">
+      <div className="flex sm:flex">
         <CardanoWallet/>
         </div>
        <HeaderProfile /> 

@@ -59,25 +59,29 @@ const HeroSection = () => {
   const displayHero = HERO_DATA.map((hero, index) => {
     return (
       <Box key={index} sx={{justifyContent: 'center', w:'100vw', border: 1, borderColor: 'transparent', borderRadius:'12px'}}>
+        <h1 className="sm:hidden block  text-[22px] font-semibold text-center tracking-wide text-white mb-[8px]">{hero.title}</h1>
       <Image
         src={hero.image}
         alt=""
-        className="w-full h-[82vh] rounded-[12px] overflow-hidden object-cover"
+        className="w-full h-[236px] sm:h-[82vh] rounded-[10px] sm:rounded-[20px] overflow-hidden object-cover"
       />
-      <div className="sm:absolute sm:bottom-[5%] sm: ml-12">
-        <h1 className="  text-[40px] text-center tracking-wide text-white ">{hero.title}</h1>
-        <button className="bg-[#6E028F] w-[194px] h-[46px] text-white py-2 px-4 rounded-md text-base tracking-wide font-Poppins font-[16px] mx-auto block my-6 sm:mx-0">
+      <div className="sm:absolute sm:bottom-[5%] sm:ml-12 ">
+        <h1 className="hidden sm:block  text-[40px] text-center tracking-wide text-white ">{hero.title}</h1>
+        <button className="bg-[#6E028F] w-full sm:w-[194px] h-[38px] sm:h-[46px] text-white py-2 px-1 sm:px-4 rounded-md text-base tracking-wide font-Poppins font-[16px]  block my-6 sm:mx-0">
         <Link href={'/'+hero.ref} className={router.pathname.split('/')[1] == hero.ref }>{hero.button}</Link>          </button>
       </div>
       </Box>
     );
   })
   return (
-    <section className=" mr-[16px] ml-[8px] mt-[8px] rounded-[12px]">
-      <div className="w-full rounded-[12px]">
+    <section className=" mr-[8px] sm:mr-[16px] ml-[8px] mt-[8px] rounded-[12px]">
+      <div className="hidden sm:w-full sm:rounded-[12px] sm:block">
         <Slider {...settings} className="w-full mr-[20px] rounded-[12px]">
           {displayHero}
         </Slider>
+      </div>
+      <div className="sm:hidden w-full rounded-[12px] block">
+          {displayHero}
       </div>
     </section>
   );

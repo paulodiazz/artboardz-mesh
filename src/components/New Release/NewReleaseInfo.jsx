@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const NewReleaseInfo = ({ art, location, artist, links, artDesc }) => {
   return (
-    <div className="tracking-wide overflow-visible grid grid-cols-1 py-2 px-4 h-full content-evenly">
+    <div className="tracking-wide overflow-visible grid grid-cols-1 py-2 px-4 h-full content-evenly w-full">
       <div className="flex items-center justify-between align-center">
         <p className="text-2xl md:text-[20px] font-medium">{`${art} by ${artist}`}</p>
         
