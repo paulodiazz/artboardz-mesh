@@ -25,27 +25,27 @@ const DUMMY_INFO = [
 
 const BenefitsSections = () => {
   return (
-    <section className="tracking-wide mb-8 text-white w-8/12 sm:w-10/12 lg:w-full mx-auto font-Montserrat font-medium space-y-6  sm:p-4">
-      <h1 className="text-[40px] text-center ">Collectors Benefits</h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-3 ">
+    <section className="tracking-wide mb-8 text-white  mx-auto w-[95%] lg:w-full  font-Montserrat font-medium space-y-6  sm:p-4">
+      <h1 className="text-[20px] sm:text-[40px] text-center ">Collectors Benefits</h1>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-14  justify-items-center">
         {DUMMY_INFO.map((info, index) => {
           return (
             <div
               key={index}
               className="w-full h-full flex flex-col align-top ml-4 " 
             >
-              <div className="m-auto h-[15rem] mt-6">
-              <div className="flex justify-center">
+              {/* <div className="m-auto h-[15rem] mt-6">
+              <div className="flex justify-center"> */}
               <Image
                 src={info.image}
                 alt="/"
-                className= 'object-cover h-[13rem]'
+                className= 'object-contain h-[12rem]'
               />
-              </div>
+              {/* </div>
               <p className=" text-base text-[20px] text-center mt-6">
                 {info.description}
-              </p>
-              </div>
+              </p> 
+              </div> */}
             </div>
           );
         })}

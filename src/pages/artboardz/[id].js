@@ -5,14 +5,17 @@ import { useRouter } from 'next/router'
 import SergeImage from "@/assets/images/SergeImage.png"
 
 const DUMMY_DETAILS = {
-  Art: "Origin",
-  Artist: "SergeOne",
+  Art: "Origins",
+  Artist: "SergeOne", 
   image: releaseImg,
   location: { city: "Cape Town", country: "South Africa" },
   links: { instagram: "/", twitter: "/", discord: "/" },
+  mintDate: "Feb 22, 2023",
+  price:"100",
+  items:"40",
+  royalty:"5%",
   artDesc:
     "Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up a red ochre mineral into fine powder. They would then put it in their mouth and spray it over their hands and onto the rock face which would create a hand print. This made them the original graffiti artists. ",
-
   patrons: {
     title: "Patrons",
     patron: [
@@ -92,26 +95,6 @@ const DUMMY_DETAILS = {
       desc2:"Origins pays homage to the genesis of graffiti art originating from the San Bushmen. The bushmen crushed up haematite or red ochre minerals into a fine powder they would put in their mouth and “spray” from their mouth over their hands onto the rock face creating the hand print—making them the original graffiti artists.  In the piece, you can see the bushman is in the middle of a vision as he’s painting, where old meets new from right to left.",
       desc3: "SergeOne is an award-winning Cape Town-based graffiti artist and illustrator. He started writing graffiti in 2008, focusing on letter forms and style writing.",
     },
-
-   
-    
-    // {
-    //   title: "Location",
-    //   desc: "Battery Park Waterfront, Cape Town, South Africa Battery Park is located in the heart of Cape Town and connects the V&A Waterfront to the city through scenic pedestrian routes, canals, and recreational spots.The canal has a biodiverse ecosystem swarming with various fish species and several breeding pairs of Cape Clawless Otters. Access to the area is free and is buzzing with foot traffic from locals and international visitors.",
-    // },
-    // {
-    //   title: "Origins Evolution",
-    //   desc: "Digital",
-    //   image: releaseImg,
-    // },
-    // {
-    //   desc: "Location",
-    //   image: releaseImg,
-    // },
-    // {
-    //   desc: "Artboard",
-    //   image: releaseImg,
-    // },
   ],
 };
 
@@ -137,6 +120,10 @@ const ArtBoardzDetailsPage = () => {
         patrons={DUMMY_DETAILS.patrons}
         moreInfo={DUMMY_DETAILS.moreDetails}
         evolution={DUMMY_DETAILS.evolution}
+        mintDate={DUMMY_DETAILS.mintDate}
+        price={DUMMY_DETAILS.price}
+        items={DUMMY_DETAILS.items}
+        royalty={DUMMY_DETAILS.royalty}
       />
     </>
   );

@@ -6,9 +6,11 @@ import Header from "@/components/Layouts//Header";
 import { useSelector } from "react-redux";
 import { navbarState } from "../store/redux-slices/UI-slice";
 import Navbar from "@/components/Navigation/Navbar";
-import { SocialIcons } from "@/components/Layouts/SocialIcons";
 import useWindowSize from "@/hook/window-size";
-
+import partner1 from '@/assets/images/partner1.png'
+import partner2 from '@/assets/images/partner2.png'
+import partner3 from '@/assets/images/partner3.png'
+import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/router";
 
@@ -46,7 +48,18 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
   
           <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col sm:hidden ">
-            <SocialIcons />
+          <h1 className="p-2 text-white text-md font-semibold">Partners</h1>
+          <div className="flex gap-2">
+        <a to="/">
+          <Image src={partner1} width={54} />
+        </a>
+        <a to="/">
+        <Image src={partner2} width={54} />
+        </a>
+        <a to="/">
+        <Image src={partner3} width={54} />
+        </a>
+        </div>
             {/* <div>
               <p className="text-white font-Montserrat">Pool ID: d19db...44</p>
             </div> */}

@@ -18,7 +18,7 @@ const MyProfileSection = () => {
         location={DUMMY_USER.location}
       />
       <div className="p-4">
-        <p className="font-Roboto text-lg font-semibold tracking-wide sm:ml-5">
+        <p className="font-Montserrat text-lg font-semibold tracking-wide sm:ml-5 mt-4">
           My Artboardz ({DUMMY_RELEASES.length}){" "}
         </p>
       </div>

@@ -36,7 +36,7 @@ const DUMMY_LEADERS = [
 
 const LeaderBoardList = () => {
   return (
-    <ul className="bg-primary-color p-4 grid gap-3 rounded-lg max-w-[60vw] m-auto">
+    <ul className="bg-primary-color p-4 grid gap-3 rounded-lg sm:max-w-[60vw] m-auto">
       {DUMMY_LEADERS.map((leader, index) => {
         return (
           <div

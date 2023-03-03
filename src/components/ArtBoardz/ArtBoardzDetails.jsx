@@ -17,6 +17,10 @@ const ArtBoardzDetails = ({
   patrons,
   moreInfo,
   evolution,
+  mintDate,
+  price,
+  items,
+  royalty
 }) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
@@ -27,12 +31,15 @@ const ArtBoardzDetails = ({
 
   return (
     <section className="text-white font-Montserrat">
-      <div className="mt-[8px] mr-[16px] ml-[8px]">
+      <div className="mt-[8px] mr-[8px] sm:mr-[16px] ml-[8px]">
+      <h1 className="sm:hidden block text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+        Artboardz
+      </h1> 
       <div className="overflow-hidden rounded-[20px] border border-transparent">
         <NewReleaseImage image={image} />
         </div>
-          <div className="max-w-[70vw] mx-auto">
-          <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
+          
+          {/* <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
           <div className=" p-2 border rounded-lg border-light-purple text-center">
               <p>Mint Date</p>
               <p className="font-semibold">Feb 22, 2023</p>
@@ -53,11 +60,9 @@ const ArtBoardzDetails = ({
               <p>Location</p>
               <p className="font-semibold">South Africa</p>
             </div>
-          </div>
-          <button className="bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4">
-            Jpgstore
-          </button>
-        </div>
+          </div> */}
+          
+       
       </div>
 
       {/* <div className="py-6">
@@ -83,7 +88,10 @@ const ArtBoardzDetails = ({
               artist={artist}
               links={links}
               artDesc={artDesc}
-  
+              mintDate={mintDate}
+              price={price}
+              items={items}
+              royalty={royalty}
               
             />
           </div>
@@ -137,12 +145,12 @@ const ArtBoardzDetails = ({
       <div className="flex mx-2 my-4">
         <div className={"flex transition-all " + (checked ? "w-1/5" : "w-4/5")}>
           <button onClick={handleChange} className="w-full">
-            <Image src={image1} className={'object-none h-[800px]'} />
+            <Image src={image1} className={'object-cover h-[800px]'} />
           </button>
         </div>
         <div className={"flex transition-all " + (checked ? "w-4/5" : "w-1/5")}>
           <button onClick={handleChange} className="w-full">
-            <Image src={image2} className={'object-none h-[800px]'} />
+            <Image src={image2} className={'object-cover h-[800px]'} />
           </button>
         </div>
       </div>

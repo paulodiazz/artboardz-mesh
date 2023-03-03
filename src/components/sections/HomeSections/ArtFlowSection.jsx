@@ -4,6 +4,22 @@ import artflowImg5 from "@/assets/images/Artflow3.png";
 
 import Image from 'next/image'
 
+const ALL_INFO = [
+  {
+    image: artflowImg1,
+    description: "Artist creates a mural on a positive narrative",
+  },
+  {
+    image: artflowImg3,
+    description: "Artboardz promotes and sells digital art",
+  },
+  {
+    image: artflowImg5,
+    description: "Artist creates physical version of the art",
+  },
+ 
+];
+
 const DUMMY_INFO = [
   {
     image: artflowImg1,
@@ -11,43 +27,43 @@ const DUMMY_INFO = [
   },
   {
     image: artflowImg3,
-    description: "Artboardz Promotes and Sells Digital Art",
+    description: "Artboardz promotes and sells digital art",
   },
-  {
-    image: artflowImg5,
-    description: "Artist Creates Physical Version of the Art",
-  },
+ 
 ];
+
 
 const ArtFlowSection = () => {
   return (
-    <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-28">
+    <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-28 max-w-[1192px] mx-auto">
       <article>
-        <h1 className="text-[40px] mt-12">The Artboardz Flow</h1>
-        <p className="text-[18px] mt-10">
+        <h1 className="text-[20px] sm:text-[40px] text-center  sm:mt-12">The Artboardz Flow</h1>
+        {/* <p className="text-[18px] mt-10">
           The artist first creates the digital Artboardz version. Artists have
           complete creative freedom as long as the work is imbued with a
           positive, inspiring message. Once between 30 to 50 NFTs have sold, the
           artist creates the equivalent physical version at a predetermined
           public location.
-        </p>
+        </p> */}
       </article>
-      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-28 gap-y-20 lg:gap-x-10 lg:gap-14">
-        {DUMMY_INFO.map((info, index) => {
+      <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-12 mx-8 gap-y-20 lg:gap-x-32 lg:gap-14 justify-items-center">
+        {ALL_INFO.map((info, index) => {
           return (
             <div
               key={index}
               className="w-full h-full flex flex-col align-top mt-4  "
             >
-              <div className="m-auto h-[15rem]">
+              <div className="m-auto w-[16rem] ">
               <div className="flex justify-center">
               <Image
                 src={info.image}
                 alt="/"
-                className= 'object-contain h-[15rem]'
+                className= 'object-contain w-[12rem]'
               />
+              
               </div>
-              <p className=" text-base text-[20px] text-center mt-6 ">
+              <div className="h-[20px]  border border-t-transparent border-r-transparent border-l-transparent border-[#6E028F]"></div>
+              <p className=" text-base text-[14px] sm:text-[20px] text-center mt-6 tracking-wide">
                 {info.description}
               </p>
               </div>
@@ -55,8 +71,52 @@ const ArtFlowSection = () => {
           );
         })}
       </div>
+      
+      {/* RESPONSIVE STYLES */}
+      
+      <div className="sm:hidden grid grid-cols-2 lg:grid-cols-3 gap-12 mx-8 gap-y-20 lg:gap-x-10 lg:gap-14 justify-items-center">
+        {DUMMY_INFO.map((info, index) => {
+          return (
+            <div
+              key={index}
+              className="w-full h-full flex flex-col align-top  "
+            >
+              <div className="m-auto w-[150px] ">
+              <div className="flex justify-center border border-t-transparent border-r-transparent border-l-transparent border-[#6E028F]">
+              <Image
+                src={info.image}
+                alt="/"
+                className= 'object-contain w-[150px]'
+              />
+               <div className="h-[190px] w-[150px] "></div>
+              </div>
+              <p className=" text-base text-[14px] sm:text-[20px] text-center mt-4">
+                {info.description}
+              </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="sm:hidden flex justify-center ">
+      <div className="m-auto w-[150px] ">
+              <Image
+                src={artflowImg5}
+                alt="/"
+                className= 'object-contain w-[150px]  '
+              />
+              <div className="h-[20px] w-[150px] border border-t-transparent border-r-transparent border-l-transparent border-[#6E028F]"></div>
+              </div>
+              
+              </div>
+              
+              <div className="sm:hidden flex justify-center">
+              <p className=" w-[150px] text-base text-[14px] sm:text-[20px] text-center  ">
+              Artist creates physical version of the art
+              </p>
+              </div>
       <div>
-        <h1 className="text-[40px] pt-20">Our Roadmap</h1>
+        <h1 className="text-base text-[20px] sm:text-[40px] pt-10">Our Roadmap</h1>
       </div>
     </section>
   );

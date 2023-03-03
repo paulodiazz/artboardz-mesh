@@ -12,11 +12,14 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React from "react";
+import { useRouter } from 'next/router';
+
 
 
 function ItemPurchaseActions(props) {
+  const router = useRouter();
   return (
-    <div className="grid grid-cols-2 gap-2 md:w-[30vw] md:mx-auto">
+    <div className={router.pathname.split('/')[1] == "artboardz" ? "hidden" :"grid grid-cols-2 gap-2 md:w-[30vw] md:mx-auto"}>
       <div className="border rounded-[5px] border-light-purple flex justify-between p-2">
         <p>Quantity:</p>
         <button onClick={props.decrementQuantityHandler}>
@@ -57,32 +60,35 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
+  const router = useRouter();
   return (
     <div>
       <div className="hidden sm:block sm:max-w-[70vw] mx-auto">
           <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
-          <div className=" p-2 border rounded-lg border-light-purple text-center">
+          <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Mint Date</p>
               <p className="font-semibold">{mintDate}</p>
             </div>
-            <div className=" p-2 border rounded-lg border-light-purple text-center">
+            <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Price</p>
               <p className="font-semibold">{price}</p>
             </div>
-            <div className="p-2 border rounded-lg border-light-purple text-center">
+            <div className="p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Items</p>
               <p className="font-semibold">{items}</p>
             </div>
-            <div className="p-2  border rounded-lg border-light-purple text-center">
+            <div className="p-2  border rounded-lg border-light-purple text-center h-[65px]">
               <p>Royalty</p>
               <p className="font-semibold">{royalty}</p>
             </div>
-            <div className="p-2  border rounded-lg border-light-purple text-center">
+            <div className="p-2  border rounded-lg border-light-purple text-center h-[65px]">
               <p>Location</p>
               <p className="font-semibold">{location.country}</p>
             </div>
           </div>
+          <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
+            Jpgstore
+          </button>
           <ItemPurchaseActions
             quantity={quantity}
             incrementQuantityHandler={incrementQuantityHandler}
@@ -120,29 +126,32 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
       </div>
       <div className="] mx-auto">
           <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
-          <div className=" p-2 border rounded-lg border-light-purple text-center">
+          <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Mint Date</p>
               <p className="font-semibold text-sm">{mintDate}</p>
             </div>
-            <div className=" p-2 border rounded-lg border-light-purple text-center">
+            <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Price</p>
               <p className="font-semibold">{price}</p>
             </div>
-            <div className="p-2 border rounded-lg border-light-purple text-center">
+            <div className="p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Items</p>
               <p className="font-semibold">{items}</p>
             </div>
             </div>
             <div className="grid grid-cols-2 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">  
-            <div className="p-2  border rounded-lg border-light-purple text-center">
+            <div className="p-2  border rounded-lg border-light-purple text-center h-[65px]">
               <p>Royalty</p>
               <p className="font-semibold">{royalty}</p>
             </div>
-            <div className="p-2  border rounded-lg border-light-purple text-center">
+            <div className="p-2  border rounded-lg border-light-purple text-center h-[65px]">
               <p>Location</p>
               <p className="font-semibold">{location.country}</p>
             </div>
             </div>
+            <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
+            Jpgstore
+          </button>
           <ItemPurchaseActions
             quantity={quantity}
             incrementQuantityHandler={incrementQuantityHandler}
@@ -159,14 +168,14 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
     
         {desc && <p className="text-base text-white ">{desc}</p>}
       </CardContent>
-      <CardActions disableSpacing ite>
+      <CardActions disableSpacing  sx={{m:'auto', width:'135px'}}>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon sx={{ color: 'white' }}/>
+          <ExpandMoreIcon sx={{ color: 'white', m:'auto'  }}/>
         </ExpandMore>
         <p className="text-base text-white font-semibold">
           See More

@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const ArtBoardzItem = ({ image, art, location, artist, links, id }) => {
   return (
-    <li className="h-30rem bg-primary-color border-2 border-light-purple rounded-lg overflow-hidden">
-      <Link href={`/artboardz/${id}`} className=" h-[266px] md:h-[228px] block">
-        <Image src={image} alt="/" className="w-full h-full object-cover " />
+    <li className=" bg-primary-color border-2 border-light-purple rounded-lg overflow-hidden">
+      <Link href={`/artboardz/${id}`} className="h-[236px] sm:h-[266px] md:h-[228px] block">
+        <Image src={image} alt="/" className="h-[236px] w-full sm:h-full object-cover " />
       </Link> 
       <div className="p-3">
         <ArtBoardzInfo

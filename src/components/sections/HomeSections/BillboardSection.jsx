@@ -5,18 +5,18 @@ const BillboardSection = () => {
       <article className="space-y-5">
       <div className="">
           <iframe
-            className=" w-full h-[60vh] aspect-video  mx-auto"
-            src="https://www.youtube.com/embed/pPVyCC7sbyM"
+            className="  h-[25vh] sm:h-[60vh] sm:w-full aspect-video  mx-auto rounded-lg "
+            src="https://www.youtube.com/embed/2RS1lDA3jFs"
             title="YouTube video player"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
         </div>
-        <h1 className="  text-[40px] text-center tracking-wide px-3">
+        <h1 className="  text-[20px] font-semibold sm:text-[40px] text-center tracking-wide px-3">
           Replacing Billboards with Art
         </h1>
 
-        <p className="text-center text-base tracking-wide text-[18px]">
+        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px]">
           Artboardz works with street artists to combine NFT art with physical
           art to beautify cities, replacing billboards with art. This innovative
           approach is tailored to support artists in the onboarding process
@@ -26,7 +26,7 @@ const BillboardSection = () => {
           artists.
         </p>
 
-        <p className="text-center text-base tracking-wide text-[18px] ">
+        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px] ">
           Through NFTs, local artists can access global buyers and collectors to
           bring color and life to their cities with street art. While physical
           images might disappear one day, the digital versions will always

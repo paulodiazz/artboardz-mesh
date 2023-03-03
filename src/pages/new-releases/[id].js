@@ -3,9 +3,10 @@ import releaseImg from "@/assets/images/new_release.png";
 import NewReleaseDetails from "@/components/New Release/NewReleaseDetails";
 import { useRouter } from 'next/router'
 import SergeImage from "@/assets/images/SergeImage.png"
+import ArtBoardzDetails from "@/components/ArtBoardz/ArtBoardzDetails";
 
 const DUMMY_DETAILS = {
-  Art: "Origin",
+  Art: "Origins",
   Artist: "SergeOne",
   image: releaseImg,
   location: { city: "Cape Town", country: "South Africa" },
@@ -45,11 +46,12 @@ const NewReleaseDetailsPage = () => {
         links={DUMMY_DETAILS.links}
         artDesc={DUMMY_DETAILS.artDesc}
         moreInfo={DUMMY_DETAILS.moreDetails}
-        mintDate={DUMMY_DETAILS.mintDate}
+        
+      />
+      mintDate={DUMMY_DETAILS.mintDate}
         price={DUMMY_DETAILS.price}
         items={DUMMY_DETAILS.items}
         royalty={DUMMY_DETAILS.royalty}
-      />
     </>
   );
 };
