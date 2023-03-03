@@ -46,12 +46,11 @@ const NewReleaseDetailsPage = () => {
         links={DUMMY_DETAILS.links}
         artDesc={DUMMY_DETAILS.artDesc}
         moreInfo={DUMMY_DETAILS.moreDetails}
-        
-      />
-      mintDate={DUMMY_DETAILS.mintDate}
+        mintDate={DUMMY_DETAILS.mintDate}
         price={DUMMY_DETAILS.price}
         items={DUMMY_DETAILS.items}
         royalty={DUMMY_DETAILS.royalty}
+        />
     </>
   );
 };

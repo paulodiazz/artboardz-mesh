@@ -20,14 +20,14 @@ const Header = () => {
     <header
       className={`bg-primary-color h-{76px} w-full header flex gap-2 px-4 items-center justify-between`}
     >
-      <div className="flex gap-4 sm:hidden">
+      <div className="flex gap-4 xl:hidden">
         <button onClick={navbarToggleHandler}>
           <Bars3Icon className="w-8 text-white" />
         </button>
         <LogoSmall />
       </div>
       <div className="flex z-40 text-[#FFFFFF] items-center gap-2 ml-auto">
-      <div className="flex sm:flex">
+      <div className="flex lg:flex">
         <CardanoWallet/>
         </div>
        <HeaderProfile /> 

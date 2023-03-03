@@ -73,14 +73,14 @@ const NewReleaseSection = () => {
     );
   })
   return (
-    <section className="text-white font-Montserrat mr-[8px] sm:mr-[16px] ml-[8px] mt-[8px]">
-              <h1 className="sm:hidden block  text-[22px] font-semibold text-center tracking-wide text-white mb-[8px]">New Releases</h1>
-      <div className="hidden sm:w-full sm:rounded-[12px] sm:block">
+    <section className="text-white font-Montserrat mr-[8px] xl:mr-[16px] ml-[8px] mt-[8px]">
+              <h1 className="xl:hidden block  text-[22px] md:text-[32px] font-semibold text-center tracking-wide text-white mb-[8px]">New Releases</h1>
+      <div className="hidden sm:w-full sm:rounded-[12px] xl:block">
       <Slider {...settings} className="w-full ">
       {displayCarrousel} 
       </Slider>
       </div>
-      <div className="sm:hidden w-full rounded-[12px] block">
+      <div className="xl:hidden w-full rounded-[12px] block">
       {displayCarrousel} 
       </div>
     </section>

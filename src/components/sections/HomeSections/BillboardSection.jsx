@@ -1,7 +1,7 @@
 
 const BillboardSection = () => {
   return (
-    <section className="text-white font-Montserrat mt-[8px] mr-[8px] ml-[8px] font-medium mb-8">
+    <section className="text-white font-Montserrat mt-[8px]  font-medium mb-8 mr-[8px] ml-[8px]">
       <article className="space-y-5">
       <div className="">
           <iframe
@@ -16,7 +16,7 @@ const BillboardSection = () => {
           Replacing Billboards with Art
         </h1>
 
-        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px]">
+        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px] max-w-[1192px] mx-auto">
           Artboardz works with street artists to combine NFT art with physical
           art to beautify cities, replacing billboards with art. This innovative
           approach is tailored to support artists in the onboarding process
@@ -26,7 +26,7 @@ const BillboardSection = () => {
           artists.
         </p>
 
-        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px] ">
+        <p className="text-center text-base tracking-wide text-[14px] sm:text-[18px] max-w-[1192px] mx-auto">
           Through NFTs, local artists can access global buyers and collectors to
           bring color and life to their cities with street art. While physical
           images might disappear one day, the digital versions will always

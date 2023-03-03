@@ -25,7 +25,7 @@ const DUMMY_INFO = [
 
 const BenefitsSections = () => {
   return (
-    <section className="tracking-wide mb-8 text-white  mx-auto w-[95%] lg:w-full  font-Montserrat font-medium space-y-6  sm:p-4">
+    <section className="tracking-wide mb-8 text-white  mx-auto w-[95%] max-w-[1192px] lg:w-full  font-Montserrat font-medium space-y-6  sm:p-4">
       <h1 className="text-[20px] sm:text-[40px] text-center ">Collectors Benefits</h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-14  justify-items-center">
         {DUMMY_INFO.map((info, index) => {

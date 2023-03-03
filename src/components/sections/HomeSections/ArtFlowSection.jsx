@@ -46,14 +46,14 @@ const ArtFlowSection = () => {
           public location.
         </p> */}
       </article>
-      <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-12 mx-8 gap-y-20 lg:gap-x-32 lg:gap-14 justify-items-center">
+      <div className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-12 md:mx-0 xl:mx-8 gap-y-20 md:gap-x-20 xl:gap-x-32 md:gap-14 justify-items-center">
         {ALL_INFO.map((info, index) => {
           return (
             <div
               key={index}
-              className="w-full h-full flex flex-col align-top mt-4  "
+              className="w-full h-full flex flex-col align-top mt-4  justify-center"
             >
-              <div className="m-auto w-[16rem] ">
+              <div className="m-auto md:w-[12rem] xl:w-[16rem] ">
               <div className="flex justify-center">
               <Image
                 src={info.image}
@@ -74,7 +74,7 @@ const ArtFlowSection = () => {
       
       {/* RESPONSIVE STYLES */}
       
-      <div className="sm:hidden grid grid-cols-2 lg:grid-cols-3 gap-12 mx-8 gap-y-20 lg:gap-x-10 lg:gap-14 justify-items-center">
+      <div className="md:hidden grid grid-cols-2 lg:grid-cols-3 gap-12 mx-8 gap-y-20 lg:gap-x-10 lg:gap-14 justify-items-center">
         {DUMMY_INFO.map((info, index) => {
           return (
             <div
@@ -98,7 +98,7 @@ const ArtFlowSection = () => {
           );
         })}
       </div>
-      <div className="sm:hidden flex justify-center ">
+      <div className="md:hidden flex justify-center ">
       <div className="m-auto w-[150px] ">
               <Image
                 src={artflowImg5}
@@ -110,7 +110,7 @@ const ArtFlowSection = () => {
               
               </div>
               
-              <div className="sm:hidden flex justify-center">
+              <div className="md:hidden flex justify-center">
               <p className=" w-[150px] text-base text-[14px] sm:text-[20px] text-center  ">
               Artist creates physical version of the art
               </p>

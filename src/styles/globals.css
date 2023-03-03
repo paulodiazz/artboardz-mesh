@@ -33,7 +33,7 @@
   border-radius: 2px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1280px) {
   .layout {
     grid-template-columns: auto 1fr;
     grid-template-areas:

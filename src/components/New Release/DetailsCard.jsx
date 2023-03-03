@@ -19,7 +19,7 @@ import { useRouter } from 'next/router';
 function ItemPurchaseActions(props) {
   const router = useRouter();
   return (
-    <div className={router.pathname.split('/')[1] == "artboardz" ? "hidden" :"grid grid-cols-2 gap-2 md:w-[30vw] md:mx-auto"}>
+    <div className={router.pathname.split('/')[1] == "artboardz" ? "hidden" :"grid grid-cols-2 gap-2 xl:w-[30vw] xl:mx-auto"}>
       <div className="border rounded-[5px] border-light-purple flex justify-between p-2">
         <p>Quantity:</p>
         <button onClick={props.decrementQuantityHandler}>
@@ -63,11 +63,11 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
   const router = useRouter();
   return (
     <div>
-      <div className="hidden sm:block sm:max-w-[70vw] mx-auto">
-          <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
+      <div className="hidden xl:block xl:max-w-[70vw] mx-auto">
+          <div className="grid grid-cols-5 gap-2 my-4 items-center justify-center text-base xl:text-xl tracking-wide">
           <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Mint Date</p>
-              <p className="font-semibold">{mintDate}</p>
+              <p className="font-semibold ">{mintDate}</p>
             </div>
             <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Price</p>
@@ -86,7 +86,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
               <p className="font-semibold">{location.country}</p>
             </div>
           </div>
-          <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
+          <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-xl p-2 font-semibold w-full xl:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
             Jpgstore
           </button>
           <ItemPurchaseActions
@@ -96,7 +96,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
           />
         </div>
 
-        <div className="hidden sm:grid grid-cols-2 grid-rows-1 mt-[36px] py-4">
+        <div className="hidden xl:grid grid-cols-2 grid-rows-1 mt-[36px] py-4">
           <div>
           {image && (
               <Image src={image} alt=""  className="w-full ml-[8px]" />
@@ -104,31 +104,31 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
           </div>
         <div className="justify-center">
           <div className="flex flex-row content-center">
-            <p className="text-2xl md:text-[36px] font-medium ml-6 mb-6">{`${art} by ${artist}`}</p>
+            <p className="text-2xl xl:text-[36px] font-medium ml-6 mb-6">{`${art} by ${artist}`}</p>
             <div className="mt-2 ml-4">
             <SocialIcons />
             </div> 
           </div>
           
-          {desc && <p className="text-base md:text-xl  m-6">{desc}</p>}
-          {desc2 && <p className="text-base md:text-xl  m-6">{desc2}</p>}
-          {desc3 && <p className="text-base md:text-xl  m-6">{desc3}</p>}
+          {desc && <p className="text-base xl:text-xl  m-6">{desc}</p>}
+          {desc2 && <p className="text-base xl:text-xl  m-6">{desc2}</p>}
+          {desc3 && <p className="text-base xl:text-xl  m-6">{desc3}</p>}
         </div>
         
       </div>
       {/* Responsive Details and quantity section */}
-      <div className="px-[8px] sm:hidden">
-      <div className="flex flex-row content-center mt-[16px] justify-between">
-          <p className="text-2xl md:text-[36px] font-medium ">{`${art} by ${artist}`}</p>
+      <div className="px-[8px] xl:hidden">
+      <div className="flex flex-row content-center mt-[16px] justify-between md:justify-center">
+          <p className="text-2xl xl:text-[36px] font-medium ">{`${art} by ${artist}`}</p>
           <div className="mt-2 ml-4 ">
           <SocialIcons />
         </div> 
       </div>
       <div className="] mx-auto">
-          <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">
+          <div className="grid grid-cols-3 gap-2 my-4 items-center justify-center text-base xl:text-xl tracking-wide">
           <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Mint Date</p>
-              <p className="font-semibold text-sm">{mintDate}</p>
+              <p className="font-semibold text-sm sm:text-md  ">{mintDate}</p>
             </div>
             <div className=" p-2 border rounded-lg border-light-purple text-center h-[65px]">
               <p>Price</p>
@@ -139,7 +139,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
               <p className="font-semibold">{items}</p>
             </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 my-4 items-center justify-center text-base sm:text-xl tracking-wide">  
+            <div className="grid grid-cols-2 gap-2 my-4 items-center justify-center text-base xl:text-xl tracking-wide">  
             <div className="p-2  border rounded-lg border-light-purple text-center h-[65px]">
               <p>Royalty</p>
               <p className="font-semibold">{royalty}</p>
@@ -149,7 +149,7 @@ export const DetailsCard = ({ image, title, desc, art, artist, desc2, desc3, min
               <p className="font-semibold">{location.country}</p>
             </div>
             </div>
-            <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-md p-2 font-semibold w-full sm:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
+            <button className={router.pathname.split('/')[1] == "artboardz" ? "bg-active-link rounded-xl p-2 font-semibold w-full xl:w-1/6  mx-auto block tracking-wide text-base my-4": "hidden"}>
             Jpgstore
           </button>
           <ItemPurchaseActions

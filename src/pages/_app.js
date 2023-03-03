@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
   const navBarState = useSelector(navbarState);
   const size = useWindowSize();
-  const isNavShown = size.width > 640 ? true : navBarState;
+  const isNavShown = size.width > 1280 ? true : navBarState;
   const router = useRouter();
 
   const paths = ["/","/new-releases"];
@@ -47,16 +47,16 @@ function MyApp({ Component, pageProps }) {
             }
           <Component {...pageProps} />
   
-          <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col sm:hidden ">
+          <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col lg:hidden ">
           <h1 className="p-2 text-white text-md font-semibold">Partners</h1>
           <div className="flex gap-2">
-        <a to="/">
+        <a to="monetsociety.io">
           <Image src={partner1} width={54} />
         </a>
-        <a to="/">
+        <a to="theartbank.io">
         <Image src={partner2} width={54} />
         </a>
-        <a to="/">
+        <a to="cur8.io">
         <Image src={partner3} width={54} />
         </a>
         </div>
