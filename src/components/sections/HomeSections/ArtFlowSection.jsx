@@ -35,9 +35,9 @@ const DUMMY_INFO = [
 
 const ArtFlowSection = () => {
   return (
-    <section className="text-white font-Montserrat font-medium tracking-wide p-4 text-center space-y-5 mb-28 max-w-[1192px] mx-auto">
+    <section className="tracking-wide mb-8 text-white  mx-auto w-[95%] max-w-[1192px] lg:w-full  font-Montserrat font-medium space-y-6  sm:p-4  text-center">
       <article>
-        <h1 className="text-[20px] sm:text-[40px] text-center  sm:mt-12">The Artboardz Flow</h1>
+        <h1 className="text-[20px] sm:text-[40px]">The Artboardz Flow</h1>
         {/* <p className="text-[18px] mt-10">
           The artist first creates the digital Artboardz version. Artists have
           complete creative freedom as long as the work is imbued with a
@@ -111,12 +111,12 @@ const ArtFlowSection = () => {
               </div>
               
               <div className="md:hidden flex justify-center">
-              <p className=" w-[150px] text-base text-[14px] sm:text-[20px] text-center  ">
+              <p className=" w-[150px] text-base text-[14px] sm:text-[20px] text-center ">
               Artist creates physical version of the art
               </p>
               </div>
-      <div>
-        <h1 className="text-base text-[20px] sm:text-[40px] pt-10">Our Roadmap</h1>
+      <div >
+        <h1 className="text-[20px] sm:text-[40px] p-4">Our Roadmap</h1>
       </div>
     </section>
   );

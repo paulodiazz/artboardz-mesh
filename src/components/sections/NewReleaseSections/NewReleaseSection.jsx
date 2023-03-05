@@ -12,37 +12,42 @@ export const DUMMY_RELEASES = [
     id: "R1",
     image: releaseImg,
     image2: SergeImage,
-    source: "Origins",
+    source: "Origins #642",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
     links: { instagram: "/", twitter: "/", discord: "/" },
+    price:"100"
+    
   },
   {
     id: "R2",
     image: releaseImg,
     image2: SergeImage,
-    source: "Origins",
+    source: "Origins #642",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
     links: { instagram: "/", twitter: "/", discord: "/" },
+    price:"100"
   },
   {
     id: "R3",
     image: releaseImg,
     image2: SergeImage,
-    source: "Origins",
+    source: "Origins #642",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
     links: { instagram: "/", twitter: "/", discord: "/" },
+    price:"100"
   },
   {
     id: "R4",
     image: releaseImg,
     image2: SergeImage,
-    source: "Origins",
+    source: "Origins #642",
     location: { city: "Cape Town", country: "South Africa" },
     author: "SergeOne",
     links: { instagram: "/", twitter: "/", discord: "/" },
+    price:"100"
   },
 ];
 

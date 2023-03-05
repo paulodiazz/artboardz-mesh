@@ -24,14 +24,15 @@ const MainProfile = ({ image, username, location }) => {
         </button>
       </div>
       <div>
-        <p className="text-xl font-semibold">{username}</p>
+      <div className="flex gap-x-4">
+      <p className="text-xl font-semibold">{username}</p>
+        <Link href="/">
+          <TwitterIconsOutline className="mt-[6px]"/>
+        </Link>
+        </div>
         <p className="text-base font-medium">{`${location.city}, ${location.country}`}</p>
       </div>
-      <div>
-        <Link href="/">
-          <TwitterIconsOutline />
-        </Link>
-      </div>
+      
       {editProfileIsShown && (
         <ProfileEditForm onCloseForm={toggleProfileEditFormHandler} />
       )}
