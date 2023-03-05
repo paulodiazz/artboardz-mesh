@@ -13,6 +13,7 @@ import partner3 from '@/assets/images/partner3.png'
 import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true);
@@ -50,15 +51,15 @@ function MyApp({ Component, pageProps }) {
           <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col lg:hidden ">
           <h1 className="p-2 text-white text-md font-semibold">Partners</h1>
           <div className="flex gap-2">
-        <a to="monetsociety.io">
+        <Link  href="https://monetsociety.io">
           <Image src={partner1} width={54} />
-        </a>
-        <a to="theartbank.io">
+        </Link >
+        <Link href="https://theartbank.io">
         <Image src={partner2} width={54} />
-        </a>
-        <a to="cur8.io">
+        </Link>
+        <Link  href="https://cur8.io">
         <Image src={partner3} width={54} />
-        </a>
+        </Link>
         </div>
             {/* <div>
               <p className="text-white font-Montserrat">Pool ID: d19db...44</p>

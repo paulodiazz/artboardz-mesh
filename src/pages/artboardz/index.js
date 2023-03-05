@@ -8,10 +8,10 @@ const ArtBoardzPage = () => {
   }, []);
   return (
     <>
-      <h1 className="sm:hidden block text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      <h1 className="xl:hidden block  text-[22px] md:text-[32px] font-semibold text-center tracking-wide text-white mb-[8px] font-Montserrat">
         Artboardz
       </h1> 
-      <div className="mx-[8px] sm:ml-4 sm:mr-8 sm:mt-8">
+      <div className="mx-[8px] xl:ml-4 xl:mr-8 xl:mt-8">
       <SearchBar />
       <ArtBoardzSection />
       </div>

@@ -31,8 +31,8 @@ const ArtBoardzDetails = ({
 
   return (
     <section className="text-white font-Montserrat">
-      <div className="mt-[8px] mr-[8px] sm:mr-[16px] ml-[8px]">
-      <h1 className="sm:hidden block text-2xl md:text-4xl font-medium tracking-wide text-center my-4 text-white font-Montserrat">
+      <div className="xl:mt-[8px] mr-[8px] xl:mr-[16px] ml-[8px]">
+      <h1 className="xl:hidden block  text-[22px] md:text-[32px] font-semibold text-center tracking-wide text-white mb-[8px]">
         Artboardz
       </h1> 
       <div className="overflow-hidden rounded-[20px] border border-transparent">

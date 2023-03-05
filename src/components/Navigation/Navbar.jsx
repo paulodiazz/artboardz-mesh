@@ -62,15 +62,15 @@ const Navbar = () => {
       <div className="hidden xl:block ml-2 mt-auto w-fit">
         <h1 className="p-2">Partners</h1>
         <div className="flex gap-2">
-        <a to="monetsociety.io">
+        <Link href="https://monetsociety.io">
           <Image src={partner1} width={54} />
-        </a>
-        <a to="theartbank.io">
+        </Link>
+        <Link href="https://theartbank.io">
         <Image src={partner2} width={54} />
-        </a>
-        <a to="cur8.io">
+        </Link>
+        <Link href="https://cur8.io">
         <Image src={partner3} width={54} />
-        </a>
+        </Link>
         </div>
       </div>
     </nav>

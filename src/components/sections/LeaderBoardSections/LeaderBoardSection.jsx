@@ -3,7 +3,7 @@ import LeaderBoardStats from "../../Leaderboardz/LeaderBoardStats";
 
 const LeaderBoardSection = () => {
   return (
-    <section className="p-2">
+    <section className="">
       <LeaderBoardStats />
       <LeaderBoardList />
     </section>
