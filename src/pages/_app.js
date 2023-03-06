@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
   const isNavShown = size.width > 1280 ? true : navBarState;
   const router = useRouter();
 
-  const paths = ["/","/new-releases"];
+  const paths = ["/","/new-releases", "/faq"];
   return (
      
     <MeshProvider>

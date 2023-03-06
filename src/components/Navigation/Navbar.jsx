@@ -55,6 +55,11 @@ const Navbar = () => {
             About
           </Link>
         </li>
+        <li onClick={toggleNavbarHandler}>
+          <Link href="/faq" className={router.pathname.split('/')[1] == "faq" ? "w-[95%] m-auto h-[46px] pt-2 bg-active-link xl:px-2  xl:h-fit xl:pt-0   inline-block" : "px-2 inline-block"}>
+            FAQ
+          </Link>
+        </li>
         {/* <li className="xl:hidden">
           <CardanoWallet/>
         </li> */}

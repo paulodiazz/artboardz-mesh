@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import ArtFlowSection from "@/components/sections/HomeSections/ArtFlowSection";
 import BenefitsSections from "@/components/sections/HomeSections/BenefitsSections";
 import BillboardSection from "@/components/sections/HomeSections/BillboardSection";
-import { SocialIcons } from "@/components/Layouts/SocialIcons";
+import TwitterIcon from "@/assets/icons/TwitterIcon";
+import DiscordIcon from "@/assets/icons/DiscordIcon";
+import Link from "next/link";
 
 const About = () => {
     useEffect(() => {
@@ -14,7 +16,15 @@ const About = () => {
           <BenefitsSections />
           <ArtFlowSection />
           <div className="h-screen w-fit mx-auto mt-auto sm:mb-10 flex items-center flex-col ">
-            <SocialIcons />
+          <div className="flex gap-2">
+          <Link href={'https://twitter.com/theartbankers'}>
+        <TwitterIcon />
+        </Link>
+        <Link href={'https://discord.gg/wCHMvjN7'}>
+        <DiscordIcon />
+        </Link>
+    </div>
+
             {/* <div>
               <p className="text-white font-Montserrat">Pool ID: d19db...44</p>
             </div> */}

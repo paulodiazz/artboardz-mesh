@@ -134,7 +134,7 @@ border-bottom-right-radius: 0 !important;
 }
 
 .slick-dots{
-  top: 99% !important;
+ 
   bottom: initial!important
 }
 .slick-dots li:nth-child(1) button:before{
