@@ -18,34 +18,34 @@ description: "The mint price for each Artboardz collections varies depending of 
 ref: "q1"
 },
 {
-  title: "What is Artboardz?",
+  title: "What is the Artboardz mint price?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q2"
 },
 
 {
-  title: "What is Artboardz?",
+  title: "What wallets are compatible with Artboardz platform",
 description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
 ref: "q3"
 },
 {
-  title: "What is Artboardz?",
+  title: "How can I buy Artboardz NFTs?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q4"
 },
 {
-  title: "What is Artboardz?",
+  title: "How do the Leaderboardz work?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q5"
 },
 {
-title: "What is Artboardz?",
+title: "How can I contact Artboardz if I run into any issues?",
 description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
 ref: "q6"
 }
 ,
 {
-  title: "What is Artboardz?",
+  title: "What is policy on sharing personal information?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q7"
 }

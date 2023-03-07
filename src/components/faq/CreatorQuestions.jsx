@@ -18,22 +18,26 @@ description: "The mint price for each Artboardz collections varies depending of 
 ref: "q1"
 },
 {
-  title: "What is Artboardz?",
+  title: "What kind of creators does Artbordz work with?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q2"
 },
 
 {
-  title: "What is Artboardz?",
+  title: "Do I need to be an NFT creator to join Artboardz?",
 description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
 ref: "q3"
 },
 {
-  title: "What is Artboardz?",
+  title: "What does  the cration process entail?",
   description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
   ref: "q4"
 },
-
+{
+  title: "How do I become a creator with Artboardz?",
+description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+ref: "q5"
+},
 
 
 ];
