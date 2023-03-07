@@ -94,8 +94,8 @@ const FullTabPanel = () => {
           onChange={handleChange}
           aria-label="styled tabs example"
         >
-          <StyledTab label="Collectors" />
-          <StyledTab label="Creators" />
+          <StyledTab label="Collectors (7)" />
+          <StyledTab label="Creators (4)" />
         </StyledTabs>
         </Box>
       </Box>
