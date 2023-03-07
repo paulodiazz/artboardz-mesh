@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Questions from "@/components/faq/FAQ";
-import QuestionTabs from "@/components/faq/QuestionTabs";
+import Questions from "@/components/faq/CollectorQuestions";
+import QuestionTabs from "@/components/faq/FullTabPanel";
 
 
 

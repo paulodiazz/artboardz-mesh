@@ -4,8 +4,6 @@ import { PatronsCard } from "../New Release/PatronsCard";
 import useCollapse from 'react-collapsed'
 import { useState } from "react";
 import Image from "next/image";
-import image1 from '@/assets/images/hero0.png'
-import image2 from '@/assets/images/hero1.png'
 
 const ArtBoardzDetails = ({
   image,
@@ -145,12 +143,12 @@ const ArtBoardzDetails = ({
       <div className="flex mx-2 my-4">
         <div className={"flex transition-all " + (checked ? "w-1/5" : "w-4/5")}>
           <button onClick={handleChange} className="w-full">
-            <Image src={image1} className={'object-cover h-[800px]'} />
+            <Image src={evolution.image} className={'object-cover h-[800px]'} />
           </button>
         </div>
         <div className={"flex transition-all " + (checked ? "w-4/5" : "w-1/5")}>
           <button onClick={handleChange} className="w-full">
-            <Image src={image2} className={'object-cover h-[800px]'} />
+            <Image src={evolution.image2} className={'object-cover h-[800px]'} />
           </button>
         </div>
       </div>
