@@ -74,7 +74,7 @@ const CollectorQuestions = () => {
     return (
       
         
-        <Box onClick={handleExpandClick} sx={{ width:{xl: '85vw', md: '60vw'}, display: 'flex',
+        <Box key={index} onClick={handleExpandClick} sx={{ width:{xl: '85vw', md: '60vw'}, display: 'flex',
         flexDirection: 'row', justifyContent:'center'}}>
       <Card sx={{ border:1, borderColor:"#6E028F" , background:'transparent',  boxShadow: 0, marginY:'10px',}}>
       <ExpandMore
