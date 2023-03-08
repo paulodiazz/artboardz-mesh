@@ -11,7 +11,7 @@ const FAQ = () => {
       return (
         <>
          
-          <div className="h-screen w-fit  mt-auto sm:mb-10 flex items-center flex-col ">
+          <div className="h-screen w-fit  mt-auto sm:mb-10 flex items-center flex-col m-auto ">
           <QuestionTabs/>
           </div>
         </>

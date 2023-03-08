@@ -39,7 +39,7 @@ const CreatorQuestions = () => {
     {
    
   title: "What is Artboardz?",
-  description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+  description: "Artboardz supports the creation of Cardano NFTs in the real world. It is an art initiative that is incubated by The Art Bank Group. Learn more here [link to About tab]",
   ref: "q1",
   handleClick: handleExpandClick,
   expanded: expanded,
@@ -48,7 +48,7 @@ const CreatorQuestions = () => {
 
   {
     title: "What kind of creators does Artbordz work with?",
-    description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+    description: "Artboardz works with creators that have digital illustration and marketing skills to develop and promote NFT collections.",
     ref: "q2",
     handleClick: handleExpandClick2,
    
@@ -56,21 +56,21 @@ expanded: expanded2  },
   
   {
     title: "Do I need to be an NFT creator to join Artboardz?",
-  description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+  description: "Artboardz strives to onboard new artists into the ecosystem, so we welcome artists of all disciplines to join us.",
   ref: "q3",
   handleClick: handleExpandClick3,
  
 expanded: expanded3},
   {
     title: "What does  the cration process entail?",
-    description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+    description: "Preparing for an Artboardz mint takes place over 3 months including the following steps:",
     ref: "q4",
     handleClick: handleExpandClick4,
    
 expanded: expanded4  },
   {
     title: "How do I become a creator with Artboardz?",
-  description: "The mint price for each Artboardz collections varies depending of factors including who the artist is, their location, the size of the collection and others",
+  description: "Artboardz works with creators around the world to bring their digital art to life. To apply to work with Artboardz, please submit the form at the bottom of the page.",
   ref: "q5",
   handleClick: handleExpandClick5,  
 expanded: expanded5
@@ -93,7 +93,7 @@ expanded: expanded5
     return (
       
         
-        <Box key={index} onClick={question.handleClick} sx={{ width:{xl: '85vw', md: '60vw'}, display: 'flex',
+        <Box key={index} onClick={question.handleClick} sx={{ width:{xl: '85vw',lg: '75vw', md: '70 vw', sm:'50vw'}, display: 'flex',
         flexDirection: 'row', justifyContent:'center'}}>
       <Card sx={{ border:1, borderColor:"#6E028F" , background:'transparent',  boxShadow: 0, marginY:'10px',}}>
       <ExpandMore
@@ -104,14 +104,14 @@ expanded: expanded5
       >
          
           
-    <CardContent sx={{ width:'70vw', display: 'flex',
+    <CardContent sx={{ width:{xl: '70vw', lg: '65vw', md: '55vw',sm:'40vw'}, display: 'flex',
         flexDirection: 'row', justifyContent:'space-between'}}>
-    <p className="text-base text-white font-semibold text-xl">{question.title}</p>
+    <p className="text-base text-white font-semibold text-xl text-left">{question.title}</p>
       
     </CardContent>
 
-    <CardActions disableSpacing    sx={{m:'auto', width:'30px', marginX:'20px'}}>
-     {question.expanded?   <RemoveIcon sx={{ color: 'white', m:'auto'  }}/>:  <AddIcon sx={{ color: 'white', m:'auto'  }}/>}
+    <CardActions disableSpacing    sx={{m:'auto', width:'3vw', marginX:'10px'}}>
+     {question.expanded?   <RemoveIcon sx={{ color: 'white', }}/>:  <AddIcon sx={{ color: 'white',  }}/>}
        
       
      
@@ -126,7 +126,7 @@ expanded: expanded5
    
       <CardContent>
    
-      <p className="text-base text-white  mx-2"> {question.description}</p>
+      <p className="text-base text-white  mx-2 align-text-top"> {question.description}</p>
      
       </CardContent>
      

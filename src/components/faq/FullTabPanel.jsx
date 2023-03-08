@@ -51,7 +51,7 @@ function TabPanel(props) {
       backgroundColor: 'transparent',
     },
     '& .MuiTabs-indicatorSpan': {
-      maxWidth: 40,
+      maxWidth: 0,
       width: '100%',
       backgroundColor: '#635ee7',
     },
@@ -66,6 +66,8 @@ function TabPanel(props) {
       color: 'rgba(255, 255, 255, 0.7)',
       '&.Mui-selected': {
         color: '#fff',
+        backgroundColor: 'rgba(100, 95, 228, 0.32)',
+        borderRadius: '6px'
       },
       '&.Mui-focusVisible': {
         backgroundColor: 'rgba(100, 95, 228, 0.32)',
@@ -85,9 +87,9 @@ const FullTabPanel = () => {
   return (
     <div>
         <Box sx={{ width: '85%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider',width:{xl: '85vw', md: '60vw'}, display: 'flex',
-          flexDirection: 'row', justifyContent:'center' }}>
-            <Box sx={{ width:{xl: '70vw', md: '60vw'}, display: 'flex',
+      <Box sx={{ borderBottom: 1, borderColor: 'divider',width:{xl: '85vw', md: '60vw', sm:'53vw'}, display: 'flex',
+          flexDirection: 'row', justifyContent:'center', marginX:'auto'}}>
+            <Box sx={{  width:{xl: '73vw', lg: '68vw', md: '58vw',sm:'40vw'}, display: 'flex',
           flexDirection: 'row', justifyContent:'left' }}>
       <StyledTabs
           value={value}
