@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
   
           <div className="h-screen w-fit mx-auto mt-auto mb-10 flex items-center flex-col lg:hidden ">
-          <h1 className="p-2 text-white text-md font-semibold">Partners</h1>
+          <h1 className="p-2 text-white text-md font-semibold block">Partners</h1>
           <div className="flex gap-2">
         <Link  href="https://monetsociety.io">
           <Image src={partner1} width={54} />

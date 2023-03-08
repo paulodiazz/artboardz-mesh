@@ -69,7 +69,7 @@ expanded: expanded2  },
  
 expanded: expanded3},
   {
-    title: "What does  the cration process entail?",
+    title: "What does  the creation process entail?",
     description: "Preparing for an Artboardz mint takes place over 3 months including the following steps:",
     step1:"  -Partnership (T-3 months) - jointly develop concept and narrative.",
     step2:"  -NFT Creation (T-2 months) - Artboardz assists creators with minting their digital images.",
