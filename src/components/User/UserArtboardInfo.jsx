@@ -14,6 +14,7 @@ const UserArtboardzInfo = ({ art,  price,  }) => {
         <p className="text-sm font-semibold ">{price}</p>
         <Image src={CardanoIcon} height={20}></Image>
         </div>
+        
         {/* <p className="text-sm">Listings: 3/30</p> */}
       </div>
 
