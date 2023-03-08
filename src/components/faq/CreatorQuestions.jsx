@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { styled } from '@mui/material/styles';
+import Link from 'next/link';
 
 
 
@@ -39,10 +40,12 @@ const CreatorQuestions = () => {
     {
    
   title: "What is Artboardz?",
-  description: "Artboardz supports the creation of Cardano NFTs in the real world. It is an art initiative that is incubated by The Art Bank Group. Learn more here [link to About tab]",
+  description: "Artboardz supports the creation of Cardano NFTs in the real world. It is an art initiative that is incubated by The Art Bank Group. Learn more ",
   ref: "q1",
   handleClick: handleExpandClick,
   expanded: expanded,
+  href:"/about",
+  link:"here"
 
 },
 
@@ -51,6 +54,8 @@ const CreatorQuestions = () => {
     description: "Artboardz works with creators that have digital illustration and marketing skills to develop and promote NFT collections.",
     ref: "q2",
     handleClick: handleExpandClick2,
+    href:"",
+    link:"",
    
 expanded: expanded2  },
   
@@ -59,21 +64,32 @@ expanded: expanded2  },
   description: "Artboardz strives to onboard new artists into the ecosystem, so we welcome artists of all disciplines to join us.",
   ref: "q3",
   handleClick: handleExpandClick3,
+  href:"",
+    link:"",
  
 expanded: expanded3},
   {
     title: "What does  the cration process entail?",
     description: "Preparing for an Artboardz mint takes place over 3 months including the following steps:",
+    step1:"  -Partnership (T-3 months) - jointly develop concept and narrative.",
+    step2:"  -NFT Creation (T-2 months) - Artboardz assists creators with minting their digital images.",
+    step3:"  -Marketing (T-1 month) - Artboardz in cooperation with the creators own marketing efforts promote the project on multiple social media platforms",
+    step4:"  -Minting (T-0 months) - Artboardz runs the NFT mint from its website.",
+    step5:"  -Physical Artwork Creation (T+1 months) - Artboardz collects the patrons tags and the creator needs to secure permits and create the physical artwork.",
     ref: "q4",
     handleClick: handleExpandClick4,
-   
-expanded: expanded4  },
+    href:"",
+    link:"",
+    expanded: expanded4  },
   {
     title: "How do I become a creator with Artboardz?",
   description: "Artboardz works with creators around the world to bring their digital art to life. To apply to work with Artboardz, please submit the form at the bottom of the page.",
   ref: "q5",
   handleClick: handleExpandClick5,  
-expanded: expanded5
+  expanded: expanded5,
+  href:"",
+  link:"",
+  
 },
   
   
@@ -93,7 +109,7 @@ expanded: expanded5
     return (
       
         
-        <Box key={index} onClick={question.handleClick} sx={{ width:{xl: '85vw',lg: '75vw', md: '70 vw', sm:'50vw'}, display: 'flex',
+        <Box key={index} onClick={question.handleClick} sx={{ width:{xl: '1242px',lg: '950px', md: '850px', sm:'590px',xs:'320px'}, display: 'flex',
         flexDirection: 'row', justifyContent:'center'}}>
       <Card sx={{ border:1, borderColor:"#6E028F" , background:'transparent',  boxShadow: 0, marginY:'10px',}}>
       <ExpandMore
@@ -104,13 +120,13 @@ expanded: expanded5
       >
          
           
-    <CardContent sx={{ width:{xl: '70vw', lg: '65vw', md: '55vw',sm:'40vw'}, display: 'flex',
+    <CardContent sx={{ width:{xl: '1192px', lg: '900px', md: '800px',sm:'540px', xs:'270px'}, display: 'flex',
         flexDirection: 'row', justifyContent:'space-between'}}>
-    <p className="text-base text-white font-semibold text-xl text-left">{question.title}</p>
+    <p className="text-base text-white font-semibold md:text-xl text-md text-left">{question.title}</p>
       
     </CardContent>
 
-    <CardActions disableSpacing    sx={{m:'auto', width:'3vw', marginX:'10px'}}>
+    <CardActions disableSpacing    sx={{m:'auto', width:'20px', marginRight:'10px'}}>
      {question.expanded?   <RemoveIcon sx={{ color: 'white', }}/>:  <AddIcon sx={{ color: 'white',  }}/>}
        
       
@@ -124,9 +140,14 @@ expanded: expanded5
     </ExpandMore> 
     <Collapse in={question.expanded} timeout="auto" unmountOnExit>
    
-      <CardContent>
+      <CardContent className='relative bottom-2.5'>
    
-      <p className="text-base text-white  mx-2 align-text-top"> {question.description}</p>
+      <p className="text-base text-white  mx-2 align-text-top"> {question.description}<Link className=" underline " href={question.href}>{question.link}</Link></p>
+      <p className="text-base text-white  mx-4 align-text-top"> {question.step1}</p>
+      <p className="text-base text-white  mx-4 align-text-top"> {question.step2}</p>
+      <p className="text-base text-white  mx-4 align-text-top"> {question.step3}</p>
+      <p className="text-base text-white  mx-4 align-text-top"> {question.step4}</p>
+      <p className="text-base text-white  mx-4 align-text-top"> {question.step5}</p>
      
       </CardContent>
      

@@ -87,9 +87,9 @@ const FullTabPanel = () => {
   return (
     <div>
         <Box sx={{ width: '85%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider',width:{xl: '85vw', md: '60vw', sm:'53vw'}, display: 'flex',
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', width:{xl: '1242px',lg: '950px', md: '850px', sm:'590px',xs:'320px'}, display: 'flex',
           flexDirection: 'row', justifyContent:'center', marginX:'auto'}}>
-            <Box sx={{  width:{xl: '73vw', lg: '68vw', md: '58vw',sm:'40vw'}, display: 'flex',
+            <Box sx={{  width:{xl: '1192px', lg: '900px', md: '800px',sm:'540px', xs:'270px'}, display: 'flex',
           flexDirection: 'row', justifyContent:'left' }}>
       <StyledTabs
           value={value}
