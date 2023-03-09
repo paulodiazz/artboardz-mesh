@@ -37,8 +37,8 @@ const DUMMY_DETAILS = {
       },
       {
         image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-        name: "",
-        twitter: "twitter.com",
+        name: "The Random Guy",
+        twitter: "",
         country: "Spain",
         assets: 10
       },
