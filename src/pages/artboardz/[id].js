@@ -3,6 +3,8 @@ import ArtBoardzDetails from "@/components/ArtBoardz/ArtBoardzDetails";
 import releaseImg from "@/assets/images/new_release.png";
 import { useRouter } from 'next/router'
 import SergeImage from "@/assets/images/SergeImage.png"
+import hero0Image from "@/assets/images/hero0.jpg";
+import hero1Image from "@/assets/images/hero1.png";
 
 const DUMMY_DETAILS = {
   Art: "Origins",
@@ -35,7 +37,7 @@ const DUMMY_DETAILS = {
       },
       {
         image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-        name: "The Random Guy",
+        name: "",
         twitter: "twitter.com",
         country: "Spain",
         assets: 10
@@ -43,7 +45,7 @@ const DUMMY_DETAILS = {
       {
         image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
         name: "Rodrigo Borgues",
-        twitter: "twitter.com",
+        twitter: "",
         country: "Spain",
         assets: 6
       },
@@ -82,8 +84,8 @@ const DUMMY_DETAILS = {
     
     {
       title: "Evolution",
-      image: SergeImage,
-      image2: releaseImg,
+      image: hero0Image,
+      image2: hero1Image,
     },
 
   moreDetails: [
