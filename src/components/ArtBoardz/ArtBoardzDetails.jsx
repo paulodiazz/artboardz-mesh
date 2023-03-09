@@ -98,7 +98,7 @@ const ArtBoardzDetails = ({
           {patrons.patron.slice(0, 4).map((info, index) => {
             let first = (index + 4) % 4 === 0;
             return(
-                <div className={`xs:w-full md:w-1/4 my-2 ${first ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
+                <div className={`xs:w-full md:w-1/4 my-2 md:px-5 lg:px-10  ${first ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
                   <PatronsCard 
                     image={info.image}
                     name={info.name}
@@ -110,21 +110,25 @@ const ArtBoardzDetails = ({
             );
           })}
         </div>
-        <div className="md:flex justify-between" {...getCollapseProps()}>
-          {patrons.patron.slice(4).map((info, index) => {
-            let first = (index + 4) % 4 === 0;
-            return(
-                <div className={`xs:w-full md:w-1/4 my-2 ${first ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
-                  <PatronsCard 
-                    image={info.image}
-                    name={info.name}
-                    twitter={info.twitter}
-                    country={info.country}
-                    assets={info.assets}
-                  />
-                </div>
-            );
-          })}
+        <div>
+        <div {...getCollapseProps()}>
+          <div className="md:flex justify-between">
+
+            {patrons.patron.slice(4).map((info, index) => {
+              return(
+                  <div className={`w-full md:1/4 my-2 md:px-5 lg:px-10 ${(index + 4) % 4 === 0 ? '' : 'xs:border-b md:border-l border-purple-800'}`} key={index}>
+                    <PatronsCard 
+                      image={info.image}
+                      name={info.name}
+                      twitter={info.twitter}
+                      country={info.country}
+                      assets={info.assets}
+                    />
+                  </div>
+              );
+            })}
+            </div>
+          </div>
         </div>
         <p className="text-center underline text-sm" {...getToggleProps()}>
             {isExpanded ? 'Collapse' : 'View All'}
@@ -135,12 +139,12 @@ const ArtBoardzDetails = ({
       )}
       {/* <Colapse/> */}
       <div className="flex mx-2 my-4">
-        <div className={"flex bg-orange-500 transition-all " + (checked ? "w-1/5" : "w-4/5")}>
+        <div className={"flex transition-all " + (checked ? "w-1/5" : "w-4/5")}>
           <button onClick={handleChange} className="w-full">
             <Image src={image1} className={'object-none h-[800px]'} />
           </button>
         </div>
-        <div className={"flex bg-emerald-500 transition-all " + (checked ? "w-4/5" : "w-1/5")}>
+        <div className={"flex  transition-all " + (checked ? "w-4/5" : "w-1/5")}>
           <button onClick={handleChange} className="w-full">
             <Image src={image2} className={'object-none h-[800px]'} />
           </button>
